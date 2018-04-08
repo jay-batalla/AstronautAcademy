@@ -1,0 +1,8 @@
+{
+  "name": "AstronautAcademy",
+  "app_id": "847b59d5",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
