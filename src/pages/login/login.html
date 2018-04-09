@@ -1,12 +1,23 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
       This is the log-in page.
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content padding>
+
+
+<ion-content padding no-bounce>
+<!-- <div ion-fixed> -->
+
+  <div class="spacer" style="width: 300px; height: 5px;"></div>
+
+  <div>
+  <img src="../assets/imgs/astronautlogo.png" width="200" height="200" style="margin-left: auto; margin-right: auto; display: block;">
+  </div>
+
+  <div class="spacer" style="width: 300px; height: 25px;"></div>
 
   <ion-list>
 
@@ -24,9 +35,10 @@
 
 <button ion-button full (click)="checkLogin()">Log-in</button>
 
-<div class="spacer" style="width: 300px; height: 200px;"></div>
+<div class="spacer" style="width: 300px; height: 100px;"></div>
 
 <p style="color: white; text-align: center;">Don't have an account?</p>
-<button ion-button full (click)="signUp()">Create An Account</button>
+<button ion-button full (click)="gosignUp()">Create An Account</button>
 
+<!-- </div> -->
 </ion-content>

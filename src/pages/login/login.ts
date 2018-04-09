@@ -24,7 +24,7 @@ export class LoginPage {
   	}
   }
 
-  signUp(): void {
+  gosignUp(): void {
   	this.navCtrl.push(SignupPage, {
   		password: this.password,
   		email: this.email

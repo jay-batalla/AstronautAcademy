@@ -8,13 +8,16 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
+import { QuizStartPage } from '../pages/quiz-start/quiz-start';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    QuizStartPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import { SignupPage } from '../pages/signup/signup';
     MyApp,
     HomePage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    QuizStartPage
   ],
   providers: [
     StatusBar,
