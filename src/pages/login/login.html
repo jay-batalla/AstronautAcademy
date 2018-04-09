@@ -7,11 +7,26 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p style="color:white;">
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-  <div class="spacer" style="width: 300px; height: 12px;"></div>
-  <span style="color:white;" class="input-label">Email</span>
-  <button ion-button full (click)="goHome()">Home</button>
+
+  <ion-list>
+
+  <ion-item>
+    <ion-label fixed>Email</ion-label>
+    <ion-input [(ngModel)]="email" type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input [(ngModel)]="password" type="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button full (click)="checkLogin()">Log-in</button>
+
+<div class="spacer" style="width: 300px; height: 200px;"></div>
+
+<p style="color: white; text-align: center;">Don't have an account?</p>
+<button ion-button full (click)="signUp()">Create An Account</button>
+
 </ion-content>

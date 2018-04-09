@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
+import { SignupPage } from '../signup/signup'
 
 
 @Component({
@@ -10,11 +11,23 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
 
+  password: string;	
+  email: string;
+
   constructor(public navCtrl: NavController) {
 
   }
 
-  goHome(): void {
-  	this.navCtrl.push(HomePage);
+  checkLogin(): void {
+  	if( this.password == 'password' && this.email == 'batalla.jay@gmail.com' ) {
+  		this.navCtrl.setRoot(HomePage);
+  	}
+  }
+
+  signUp(): void {
+  	this.navCtrl.push(SignupPage, {
+  		password: this.password,
+  		email: this.email
+  	});
   }
 }
