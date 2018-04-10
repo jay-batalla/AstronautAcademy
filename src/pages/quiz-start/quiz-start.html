@@ -9,8 +9,18 @@
 
 <ion-content padding>
 
-  <h1 style="color: white; text-align: center;" > Welcome Cadet {{first_name}} {{last_name}} </h1>
+  <h1 style="color: white; text-align: center; font-size: 46px;" > <em><b>Welcome Cadet {{first_name}} {{last_name}}</b></em> </h1>
 
-  <h1 style="color: white; text-align: center;" > to <em><b>Astronaut Academy</b></em>! </h1>
+  <div class="spacer" style="width: 300px; height: 10px;"></div>
+
+  <h1 style="color: white; text-align: center;" > Before you begin your days at <em><b>The Astronaut Academy</b></em>, </h1>
+
+  <h1 style="color: white; text-align: center;" > you must first take a quiz to determing your position on this crew! </h1>
+
+  <div class="spacer" style="width: 300px; height: 10px;"></div>
+
+  <h1 style="color: white; text-align: center;" > <em><b>Are you ready, cadet?</b></em></h1>
+
+  <button ion-button full (click)="startQuiz()">I'm Ready!</button>
 
 </ion-content>

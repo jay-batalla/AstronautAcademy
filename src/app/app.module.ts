@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { QuizStartPage } from '../pages/quiz-start/quiz-start';
+import { PersonalityPage } from '../pages/personality/personality';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { QuizStartPage } from '../pages/quiz-start/quiz-start';
     HomePage,
     LoginPage,
     SignupPage,
-    QuizStartPage
+    QuizStartPage,
+    PersonalityPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { QuizStartPage } from '../pages/quiz-start/quiz-start';
     HomePage,
     LoginPage,
     SignupPage,
-    QuizStartPage
+    QuizStartPage,
+    PersonalityPage
   ],
   providers: [
     StatusBar,

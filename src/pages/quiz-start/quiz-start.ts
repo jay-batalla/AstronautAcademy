@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { PersonalityPage } from '../personality/personality';
+
 @IonicPage()
 @Component({
   selector: 'page-quiz-start',
@@ -18,6 +20,10 @@ export class QuizStartPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuizStartPage');
+  }
+
+  startQuiz() {
+    this.navCtrl.setRoot( PersonalityPage );
   }
 
 }
