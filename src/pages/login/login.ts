@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
+import { NavController, AlertController, LoadingController } from 'ionic-angular';
 
 
 import { HomePage } from '../home/home';
-import { SignupPage } from '../signup/signup'
+import { SignupPage } from '../signup/signup';
 
 @Component({
   selector: 'page-login',
@@ -17,7 +16,7 @@ export class LoginPage {
   first_name: string;
   role: string;
 
-  constructor(public alertCtrl: AlertController, public navCtrl: NavController) {
+  constructor(public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController) {
   	this.first_name = 'Jay';
   	this.role = 'Scientist';
   } 
@@ -33,15 +32,35 @@ export class LoginPage {
 
   checkLogin(): void {
   	if( this.password == 'p' && this.email == 'b' ) {
-  		this.navCtrl.push(HomePage, {
-  			first_name: this.first_name,
-  			role: this.role
-  		});
+  		this.signInLoad();
+  		// this.navCtrl.setRoot(HomePage, {
+  		// 	first_name: this.first_name,
+  		// 	role: this.role
+  		// });
   		// this.navCtrl.setRoot(HomePage);
   	}
   	else {
   		this.loginAlert();
   	}
+  }
+
+  signInLoad() {
+  	let loading = this.loadingCtrl.create({
+  		content: 'Getting your information. Please wait...'
+  	});
+
+  	loading.present();
+
+  	setTimeout(() => {
+  		this.navCtrl.setRoot(HomePage, {
+  			first_name: this.first_name,
+  			role: this.role
+  		});
+  	}, 2000);
+
+  	setTimeout (() => {
+  		loading.dismiss();
+  	}, 2000);
   }
 
   gosignUp(): void {

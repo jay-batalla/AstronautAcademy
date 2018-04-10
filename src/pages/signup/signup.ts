@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
 import { QuizStartPage } from '../quiz-start/quiz-start'
 
@@ -15,7 +15,7 @@ export class SignupPage {
   email: string;
   password: string;
  
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController ) {
   	this.password = navParams.get('password');
   	this.email = navParams.get('email');
   }
@@ -25,11 +25,22 @@ export class SignupPage {
   }
 
 
-  signUp() {
-  	this.navCtrl.setRoot(QuizStartPage, {
-      first_name: this.first_name,
-      last_name: this.last_name
+  signUpLoad() {
+    let loading = this.loadingCtrl.create({
+      content: 'Creating your profile, cadet. Please wait...'
     });
-  }
 
+    loading.present();
+
+    setTimeout(() => {
+      this.navCtrl.setRoot(QuizStartPage, {
+        first_name: this.first_name,
+        last_name: this.last_name
+      });
+    }, 2000);
+
+    setTimeout (() => {
+      loading.dismiss();
+    }, 2000);
+  }
 }
