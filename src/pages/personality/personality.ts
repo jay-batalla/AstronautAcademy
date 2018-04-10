@@ -11,11 +11,11 @@ import { HomePage } from '../home/home';
 export class PersonalityPage {
 
   question: string;
-  scientist_answer: string; sci: int;
-  navigator_answer: string; nav: int;
-  engineer_answer: string; eng: int;
-  doctor_answer: string; doc: int;
-  question_number: int;	
+  scientist_answer: string; sci: number;
+  navigator_answer: string; nav: number;
+  engineer_answer: string; eng: number;
+  doctor_answer: string; doc: number;
+  question_number: number;	
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.question = "What do you want to be when you grow up?";
@@ -56,19 +56,19 @@ export class PersonalityPage {
   	this.checkQuestion(this.question_number);
   }
 
-  checkQuestion( int ): void {
-  	if( int + 1 == 5 )
+  checkQuestion( number ): void {
+  	if( number + 1 == 5 )
   	   {
   	   	this.navCtrl.setRoot(HomePage);
   	   }
   	else
   	   {
-  	   	this.changeQuestion(int);
+  	   	this.changeQuestion(number);
   	   }
   }
 
-  changeQuestion( int ): void {
-  	switch( int ) {
+  changeQuestion( number ): void {
+  	switch( number ) {
   		case 2:
   			this.question = "What interests you the most?";
 		  	this.scientist_answer = "Experiments";
