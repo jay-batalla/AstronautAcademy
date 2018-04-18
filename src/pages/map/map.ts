@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the MapPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-map',
@@ -63,7 +56,7 @@ export class MapPage {
       map.indoors.on("click", function(e) {
         latlng = e.latlng;
         pixelPosition = map.indoors.latLngToLayerPoint(latlng);
-        alert("LatLng = "+latlng+"\n Pixel position = "+pixelPosition);
+        alert("LatLng = "+latlng+"\n Pixel position = " + pixelPosition);
       });
 
       //debug
