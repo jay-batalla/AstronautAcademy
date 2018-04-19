@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController } from 'ionic-angular';
 
