@@ -1,0 +1,40 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title style="text-align: center">Create an Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <!-- <h1 style="text-align: center; color: white;"> Create your account </h1>  -->
+
+  <ion-list>
+
+  <ion-item>
+  <ion-label fixed>First Name</ion-label>
+  <ion-input [(ngModel)]="first_name" type="first_name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label fixed>Last Name</ion-label>
+  <ion-input [(ngModel)]="last_name" type="last_name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Email</ion-label>
+    <ion-input [(ngModel)]="email" type="email" value={{email}}></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input [(ngModel)]="password" type="password" value={{password}}></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button full (click)="signUpLoad()">Sign Up</button>
+
+</ion-content>
