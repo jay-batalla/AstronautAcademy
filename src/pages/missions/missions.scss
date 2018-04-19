@@ -1,0 +1,41 @@
+.ios, .md {
+
+    page-missions {
+
+        ion-slide {
+            align-items: flex-start;
+            color: #fff;
+        }
+
+        ion-item {
+            margin-bottom: 5px;
+            font-size: 1.1em;
+            background-color: map-get($colors, primary);
+            color: #fff;
+
+        }
+
+        flash-card {
+            color: #fff;
+            font-style: italic;
+
+            img {
+                width: 70%;
+                height: auto;
+            }
+        }
+
+        .start-slide {
+            justify-content: center;
+            align-items: center;
+
+            button {
+                font-size: 1.3em;
+                font-weight: normal;
+
+            }
+        }
+
+    }
+
+}

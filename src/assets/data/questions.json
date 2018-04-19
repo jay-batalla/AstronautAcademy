@@ -1,0 +1,214 @@
+{
+    "questions": [
+
+        {
+
+            "flashCardFront": "What is a Rover?",
+            "flashCardBack": "Space exploration vehicle that can move across the surface of a planet or other object",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Space exploration vehicle that can move across the surface of a planet or other object", "correct": true, "selected": false},
+                {"answer": "A rocket designed to travel through Space", "correct": false, "selected": false},
+                {"answer": "Space vehicle that travels to the Sun ", "correct": false, "selected": false},
+                {"answer": "Rocket-launched vehicle designed to go into orbit around the Earth", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "While some Rovers are designed to be robotic, what are other rovers designed to transport? ",
+            "flashCardBack": "Astronauts",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Robots", "correct": false, "selected": false},
+                {"answer": "Astronauts", "correct": true, "selected": false},
+                {"answer": "Animals", "correct": false, "selected": false},
+                {"answer": "Scientists", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "What is one form of power a rover requires in order to move?",
+            "flashCardBack": "Solar",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Geothermal", "correct": false, "selected": false},
+                {"answer": "Wind", "correct": false, "selected": false},
+                {"answer": "Solar", "correct": true, "selected": false},
+                {"answer": "Hydroelectric", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "A Rover relies on which of the following for it to be able to move?",
+            "flashCardBack": "Nuclear Energy",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Geothermal Energy", "correct": false, "selected": false},
+                {"answer": "Nuclear Energy", "correct": true, "selected": false},
+                {"answer": "Hydroelectric Energy", "correct": false, "selected": false},
+                {"answer": "Wind Energy", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Who was the first to build and send a rover to the Moon in the 1960s?",
+            "flashCardBack": "Russia",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "China", "correct": false, "selected": false},
+                {"answer": "India", "correct": false, "selected": false},
+                {"answer": "Germany", "correct": false, "selected": false},
+                {"answer": "Russia", "correct": true, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Which of the following was the first to send humans to the Moon?",
+            "flashCardBack": "America",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "America", "correct": true, "selected": false},
+                {"answer": "France", "correct": false, "selected": false},
+                {"answer": "Japan", "correct": false, "selected": false},
+                {"answer": "Vietnam", "correct": false, "selected": false}
+
+            ]
+        },
+
+
+        {
+            "flashCardFront": "How do Rovers arrive into Space?",
+            "flashCardBack": "Lander Spacecraft",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "They are built once they get to Space", "correct": false, "selected": false},
+                {"answer": "Transported with robots", "correct": false, "selected": false},
+                {"answer": "Lander Spacecraft", "correct": true, "selected": false},
+                {"answer": "Airplane", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Which of the following best describes how a Rover must be built so that it may withstand high levels of acceleration, extreme temperatures, pressure variation, Hydroelectric?",
+            "flashCardBack": "Being reliable",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Being reliable", "correct": true, "selected": false},
+                {"answer": "Being small", "correct": false, "selected": false},
+                {"answer": "Being large", "correct": false, "selected": false},
+                {"answer": "Being fast", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Which of the following is one of the most important factors that an Engineer must consider while DESIGNING a Rover?",
+            "flashCardBack": "Human capacity",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Aesthetics", "correct": false, "selected": false},
+                {"answer": "Speed", "correct": false, "selected": false},
+                {"answer": "Human capacity", "correct": true, "selected": false},
+                {"answer": "Environmental issues", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+              "flashCardFront": "When BUILDING a Rover, what is one of the many factors an Engineer must consider?",
+              "flashCardBack": "Reliability",
+              "flashCardFlipped": false,
+              "questionText": "Location: Rover Exhibit",
+              "answers": [
+                  {"answer": "Long-term health problems", "correct": false, "selected": false},
+                  {"answer": "Reliability", "correct": true, "selected": false},
+                  {"answer": "Environmental factors", "correct": false, "selected": false},
+                  {"answer": "Speed", "correct": false, "selected": false}
+
+              ]
+        },
+
+        {
+              "flashCardFront": " What are the names of all the Mars Rovers?",
+              "flashCardBack": "Sojourner, Spirit and Oppurtunity, Curiosity, Mars 2020",
+              "flashCardFlipped": false,
+              "questionText": "Location: Rover Exhibit",
+              "answers": [
+                  {"answer": "Explorer, Spirit and Opportunity, Curiosity, Mars 2020", "correct": false, "selected": false},
+                  {"answer": "Sojourner, Propeller, Spirit and Opportunity, Curiosity", "correct": false, "selected": false},
+                  {"answer": "Propeller, Explorer, Sojourner, Mars 2020", "correct": false, "selected": false},
+                  {"answer": "Sojourner, Spirit and Opportunity, Curiosity, Mars 2020", "correct": true, "selected": false}
+
+              ]
+        },
+
+        {
+              "flashCardFront": "About how long does it take to send a signal from Mars to Earth?",
+              "flashCardBack": "About 3-21 minutes",
+              "flashCardFlipped": false,
+              "questionText": "Location: Rover Exhibit",
+              "answers": [
+                  {"answer": "About 3-21 minutes", "correct": true, "selected": false},
+                  {"answer": "About 2-5 minutes", "correct": false, "selected": false},
+                  {"answer": "About 10-35 minutes", "correct": false, "selected": false},
+                  {"answer": "About 1 minute ", "correct": false, "selected": false}
+
+              ]
+        },
+
+        {
+              "flashCardFront": "About how long does it take to send a signal from Mars to Earth?",
+              "flashCardBack": "About 3-21 minutes",
+              "flashCardFlipped": false,
+              "questionText": "Location: Rover Exhibit",
+              "answers": [
+                  {"answer": "About 3-21 minutes", "correct": true, "selected": false},
+                  {"answer": "About 2-5 minutes", "correct": false, "selected": false},
+                  {"answer": "About 10-35 minutes", "correct": false, "selected": false},
+                  {"answer": "About 1 minute ", "correct": false, "selected": false}
+
+              ]
+        },
+
+        {
+              "flashCardFront": "Which of the following Laws of Science allow Rovers to apply a power against the surface to be able to propel itself forward?",
+              "flashCardBack": "Newton's Law",
+              "flashCardFlipped": false,
+              "questionText": "Location: Rover Exhibit",
+              "answers": [
+                  {"answer": "Moore’s Law", "correct": false, "selected": false},
+                  {"answer": "Ohm’s Law", "correct": false, "selected": false},
+                  {"answer": "Faraday’s Law", "correct": false, "selected": false},
+                  {"answer": "Newton’s Law", "correct": true, "selected": false}
+
+              ]
+        },
+
+        {
+              "flashCardFront": "Which of the following would be located on the Chariot III SPS Type Rover?",
+              "flashCardBack": "Suit Ports",
+              "flashCardFlipped": false,
+              "questionText": "Location: Rover Exhibit",
+              "answers": [
+                  {"answer": "Suite Ports", "correct": false, "selected": false},
+                  {"answer": "Suit Ports", "correct": true, "selected": false},
+                  {"answer": "Launch Ports", "correct": false, "selected": false},
+                  {"answer": "Light Ports", "correct": false, "selected": false}
+
+              ]
+        }
+    ]
+}

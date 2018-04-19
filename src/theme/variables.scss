@@ -84,4 +84,11 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
-@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@font-face{
+  font-family: "DoHyeon";
+  src:url("../assets/fonts/DoHyeon-Regular.ttf");
+}
+
+body, span, button, h1, h2, h3, h4, h5, ion-item, ion-title {
+  font-family: 'DoHyeon' !important;
+}
