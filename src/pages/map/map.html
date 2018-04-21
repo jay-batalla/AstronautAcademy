@@ -27,11 +27,13 @@
     }
     </style>
     <script>
-      var map = L.Wrld.map("map", "f1e83049d9f153920ff635e55992cd9b",{ coverageTreeManifest: "https://webgl-cdn1.wrld3d.com/chunk/indoor_maps/api_requests/EIM-ad6cd210-0145-4881-878e-8f5455693527_2018_03_14_04_14_59/webgl_manifest.bin.gz", 
+     //Change coverageTreeManifest to mobile link when publishing to io
+      var map = L.Wrld.map("map", "f1e83049d9f153920ff635e55992cd9b",{ coverageTreeManifest: "https://webgl-cdn1.wrld3d.com/chunk/indoor_maps/api_requests/EIM-ad6cd210-0145-4881-878e-8f5455693527_2018_03_14_04_14_59/webgl_manifest.bin.gz",
         center: [39.52590569999999, -119.80886459999999],
         zoom: 18,
         indoorsEnabled: true
       });
+      map.locate({setView: true});
     </script>
 
   </div>
