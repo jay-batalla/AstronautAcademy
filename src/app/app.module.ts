@@ -12,6 +12,7 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { QuizStartPage } from '../pages/quiz-start/quiz-start';
+import { QuizEndPage } from '../pages/quiz-end/quiz-end';
 import { PersonalityPage } from '../pages/personality/personality';
 import { MapPage } from '../pages/map/map';
 import { DataProvider } from '../providers/data/data';
@@ -25,6 +26,7 @@ import { MissionsPage } from '../pages/missions/missions';
     LoginPage,
     SignupPage,
     QuizStartPage,
+    QuizEndPage,
     PersonalityPage,
     MapPage,
     FlashCardComponent,
@@ -42,6 +44,7 @@ import { MissionsPage } from '../pages/missions/missions';
     LoginPage,
     SignupPage,
     QuizStartPage,
+    QuizEndPage,
     PersonalityPage,
     MapPage,
     MissionsPage

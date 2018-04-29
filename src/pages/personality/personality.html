@@ -1,49 +1,43 @@
-<!-- <ion-header>
+<ion-header>
 
   <ion-navbar>
     <ion-title>personality</ion-title>
   </ion-navbar>
 
-</ion-header> -->
+</ion-header>
 
 
 <ion-content padding>
 
-<ion-card>
 
-	<ion-card-header style="font-size: 36px; text-align: center">
-	<b>Question #{{question_number}} </b>
-	</ion-card-header>
+	<h1 style="font-size: 36px; text-align: center; color: white">
+	<b>Question #{{question_number}} {{first_name}} </b>
+	</h1>
 
-	<ion-card-content style="font-size: 25px; text-align: center">
+	<h1 style="font-size: 25px; text-align: center; color: white">
 	<b>{{question}}</b>
-	</ion-card-content>
+	</h1>
 
 
-	<ion-list>
-    <button ion-item (click)="scienceAnswer()" >
-      <ion-icon name="flask" item-start></ion-icon>
+    <button ion-button full icon-start (click)="scienceAnswer()" >
+      <ion-icon name="flask"></ion-icon>
       {{scientist_answer}}
     </button>
 
-    <button ion-item (click)="navigatorAnswer()">
-      <ion-icon name="jet" item-start></ion-icon>
+    <button ion-button full icon-start (click)="navigatorAnswer()">
+      <ion-icon name="jet"></ion-icon>
       {{navigator_answer}}
     </button>
 
-    <button ion-item (click)="engineerAnswer()">
-      <ion-icon name="hammer" item-start></ion-icon>
+    <button ion-button full icon-start (click)="engineerAnswer()">
+      <ion-icon name="hammer"></ion-icon>
       {{engineer_answer}}
     </button>
 
-    <button ion-item (click)="doctorAnswer()">
-      <ion-icon name="medkit" item-start></ion-icon>
+    <button ion-button full icon-start (click)="doctorAnswer()">
+      <ion-icon name="medkit"></ion-icon>
       {{doctor_answer}}
     </button>
-
-  </ion-list>
-
-</ion-card>
 
 
 

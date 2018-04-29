@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { HomePage } from '../home/home';
+import { QuizEndPage } from '../quiz-end/quiz-end';
 
 @IonicPage()
 @Component({
@@ -10,12 +10,14 @@ import { HomePage } from '../home/home';
 })
 export class PersonalityPage {
 
+  first_name: string;
   question: string;
+  role: string;
   scientist_answer: string; sci: number;
   navigator_answer: string; nav: number;
   engineer_answer: string; eng: number;
   doctor_answer: string; doc: number;
-  question_number: number;	
+  question_number: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.question = "What do you want to be when you grow up?";
@@ -25,6 +27,7 @@ export class PersonalityPage {
   	this.doctor_answer = "A doctor";
   	this.sci = this.nav = this.eng = this.doc = 0;
   	this.question_number = 1;
+    this.first_name = navParams.get('first_name');
   }
 
   ionViewDidLoad() {
@@ -59,7 +62,12 @@ export class PersonalityPage {
   checkQuestion( number ): void {
   	if( number + 1 == 5 )
   	   {
-  	   	this.navCtrl.setRoot(HomePage);
+        var answers = new Array(this.sci, this.nav, this.eng, this.doc);
+        this.determineRole( answers );
+  	   	this.navCtrl.setRoot(QuizEndPage, {
+          role: this.role,
+          first_name: this.first_name
+        });
   	   }
   	else
   	   {
@@ -91,6 +99,42 @@ export class PersonalityPage {
 		  	this.doctor_answer = "Medical Bay";
   			break;
   	}
+  }
+
+  determineRole( answers:number[] ): void {
+    if( answers.length == 0 )
+       {
+        //default answer is scientist
+        this.role = 'Scientist';
+       }
+
+    var max = answers[0];
+    var maxIndex = 0;
+
+    for( var counter = 0; counter < answers.length; counter++ )
+    {
+      if( answers[counter] > max )
+         {
+          max = answers[counter];
+          maxIndex = counter;
+         }
+    }
+
+    switch(maxIndex)
+       {
+        case 0:
+          this.role = 'Scientist';
+          break;
+        case 1:
+          this.role = 'Navigator';
+          break;
+        case 2:
+          this.role = 'Engineer';
+          break;
+        case 3:
+          this.role = 'Doctor';
+          break;
+       }
   }
 
 }

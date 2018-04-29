@@ -23,7 +23,9 @@ export class QuizStartPage {
   }
 
   startQuiz() {
-    this.navCtrl.setRoot( PersonalityPage );
+    this.navCtrl.setRoot( PersonalityPage, {
+      first_name: this.first_name,
+    });
   }
 
 }
