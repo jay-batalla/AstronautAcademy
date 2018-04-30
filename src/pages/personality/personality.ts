@@ -60,7 +60,7 @@ export class PersonalityPage {
   }
 
   checkQuestion( number ): void {
-  	if( number + 1 == 5 )
+  	if( number + 1 == 6 )
   	   {
         var answers = new Array(this.sci, this.nav, this.eng, this.doc);
         this.determineRole( answers );
