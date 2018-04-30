@@ -30,6 +30,7 @@
     "cordova-ios": "4.5.4",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-ionic": "^4.1.6",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.2.0",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -55,7 +56,15 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
-      "cordova-plugin-geolocation": {}
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-ionic": {
+        "APP_ID": "947b59d5",
+        "CHANNEL_NAME": "Development",
+        "UPDATE_METHOD": "auto",
+        "WARN_DEBUG": "true",
+        "UPDATE_API": "https://api.ionicjs.com",
+        "MAX_STORE": "2"
+      }
     },
     "platforms": [
       "ios"
