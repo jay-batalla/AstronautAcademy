@@ -1,14 +1,6 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>personality</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
 <ion-content padding>
 
+  <div class="spacer" style="width: 300px; height: 65px;"></div>
 
 	<h1 style="font-size: 36px; text-align: center; color: white">
 	<b>Question #{{question_number}} {{first_name}} </b>
@@ -19,22 +11,22 @@
 	</h1>
 
 
-    <button ion-button full icon-start (click)="scienceAnswer()" >
+    <button ion-button large full icon-start (click)="scienceAnswer()" >
       <ion-icon name="flask"></ion-icon>
       {{scientist_answer}}
     </button>
 
-    <button ion-button full icon-start (click)="navigatorAnswer()">
+    <button ion-button large full icon-start (click)="navigatorAnswer()">
       <ion-icon name="jet"></ion-icon>
       {{navigator_answer}}
     </button>
 
-    <button ion-button full icon-start (click)="engineerAnswer()">
+    <button ion-button large full icon-start (click)="engineerAnswer()">
       <ion-icon name="hammer"></ion-icon>
       {{engineer_answer}}
     </button>
 
-    <button ion-button full icon-start (click)="doctorAnswer()">
+    <button ion-button large full icon-start (click)="doctorAnswer()">
       <ion-icon name="medkit"></ion-icon>
       {{doctor_answer}}
     </button>
