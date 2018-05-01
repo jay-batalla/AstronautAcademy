@@ -4,7 +4,8 @@ import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { MapPage } from '../map/map';
 import { MissionsPage } from '../missions/missions';
-import { LeaderboardPage } from '../leaderboard/leaderboard'; 
+import { LeaderboardPage } from '../leaderboard/leaderboard';
+import { ProgressPage } from '../progress/progress';
 
 @Component({
   selector: 'page-home',
@@ -51,6 +52,11 @@ export class HomePage {
     goToLeaderboard()
     {
       this.navCtrl.push(LeaderboardPage);
+    }
+
+    goToProgress()
+    {
+      this.navCtrl.push(ProgressPage);
     }
 
 }
