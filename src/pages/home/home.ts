@@ -4,8 +4,7 @@ import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { MapPage } from '../map/map';
 import { MissionsPage } from '../missions/missions';
-import { LeaderboardPage } from '../leaderboard/leaderboard';
-
+import { LeaderboardPage } from '../leaderboard/leaderboard'; 
 
 @Component({
   selector: 'page-home',

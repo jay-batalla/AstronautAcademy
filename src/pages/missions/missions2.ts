@@ -1,24 +1,17 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DataProvider } from '../../providers/data/data';
 import { HomePage } from '../home/home';
 import { FlashCardComponent } from '../../components/flash-card/flash-card';
-import { Missions2Page } from '../missions/missions2';
+import { MissionsPage } from '../missions/missions';
+import { DataProvider2 } from '../../providers/data/data1';
 
-import { MapPage } from '../map/map';
 
-/**
- * Generated class for the MissionsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
  @Component({
    selector: 'page-missions',
-   templateUrl: 'missions.html'
+   templateUrl: 'missions2.html'
  })
- export class MissionsPage {
+ export class Missions2Page {
 
      @ViewChild('slides') slides: any;
 
@@ -28,7 +21,7 @@ import { MapPage } from '../map/map';
      slideOptions: any;
      questions: any;
 
-    constructor(public navCtrl: NavController, public dataService: DataProvider) {
+    constructor(public navCtrl: NavController, public dataService: DataProvider2) {
 
     }
 
@@ -96,12 +89,15 @@ import { MapPage } from '../map/map';
              this.slides.lockSwipes(true);
          }
 
-         goMap() {
-            this.navCtrl.push(MapPage);
-         }
-
          goToMission2()
          {
            this.navCtrl.push(Missions2Page);
          }
-     }
+
+         goToHome()
+         {
+           this.navCtrl.push(HomePage);
+         }
+
+
+}

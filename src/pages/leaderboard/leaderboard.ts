@@ -37,10 +37,8 @@ export class LeaderboardPage {
           //this.position = j;
         //}
       //})
-
-      //return this.items; 
+      //return this.items;
     //});
   //}
-
 }
 }

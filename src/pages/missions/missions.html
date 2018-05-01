@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Trivia</ion-title>
+    <ion-title>Mission 1</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -11,7 +11,7 @@
     <ion-slides #slides>
 
         <ion-slide class="start-slide">
-          <h2> You're ready to begin your first mission! You must correctly answer each trivia question in order to unlock your next mission. Keep a sharp eye out for CLUES and ANSWERS to all trivia questions. They can be found at the corresponding Space exhibits in galleries. Refer to the map if you need help. Good Luck!  </h2>
+          <h2> You're ready to begin your first mission! You must correctly answer each trivia question in order to unlock your next mission. Keep a sharp eye out for CLUES and ANSWERS to all trivia questions. They can be found at the ROVER EXHIBIT in the ROVER OPERATIONS ROOM. Refer to the map if you need help. Good Luck!  </h2>
 
             <button ion-button color="primary" (click)="nextSlide()">LET'S GO</button>
         </ion-slide>
@@ -37,7 +37,7 @@
                 </ion-item>
 
                 <button (click)="goMap()">
-                    Stuck? Find the answer here!
+                    Stuck? Find the Answer Here!
                 </button>
 
             </ion-list>
@@ -45,9 +45,11 @@
         </ion-slide>
 
         <ion-slide>
-            <h2>Outstanding Effort! Your Final Score is {{score}}</h2>
+            <h2>Outstanding Effort! Your Final Score is {{score}} is out of 15</h2>
 
             <button (click)="restartQuiz()" ion-button full color="primary">Play Again?</button>
+            <button (click)="goToMission2()" ion-button full color="primary">NEXT MISSION</button>
+
 
         </ion-slide>
 
