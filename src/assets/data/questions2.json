@@ -1,0 +1,145 @@
+{
+    "questions": [
+
+        {
+
+            "flashCardFront": "What is another term for Martian days?",
+            "flashCardBack": "Sols",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Sols", "correct": true, "selected": false},
+                {"answer": "Dias", "correct": false, "selected": false},
+                {"answer": "Journees", "correct": false, "selected": false},
+                {"answer": "Cronos", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "What was the name of the first Mars Rover?",
+            "flashCardBack": "Sojourner",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Propeller", "correct": false, "selected": false},
+                {"answer": "Sojourner", "correct": true, "selected": false},
+                {"answer": "Lunar ", "correct": false, "selected": false},
+                {"answer": "Traveller", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "How many Sols did the Mars Pathfinder Mission last?",
+            "flashCardBack": "90 Sols",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "5 Sols", "correct": false, "selected": false},
+                {"answer": "200 Sols", "correct": false, "selected": false},
+                {"answer": "10 Sols", "correct": true, "selected": false},
+                {"answer": "90 Sols", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "A Rover relies on which of the following for it to be able to move?",
+            "flashCardBack": "Nuclear Energy",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Geothermal Energy", "correct": false, "selected": false},
+                {"answer": "Nuclear Energy", "correct": true, "selected": false},
+                {"answer": "Hydroelectric Energy", "correct": false, "selected": false},
+                {"answer": "Wind Energy", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Who was the first to build and send a rover to the Moon in the 1960s?",
+            "flashCardBack": "Russia",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "China", "correct": false, "selected": false},
+                {"answer": "India", "correct": false, "selected": false},
+                {"answer": "Germany", "correct": false, "selected": false},
+                {"answer": "Russia", "correct": true, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Which of the following was the first to send humans to the Moon?",
+            "flashCardBack": "America",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "America", "correct": true, "selected": false},
+                {"answer": "France", "correct": false, "selected": false},
+                {"answer": "Japan", "correct": false, "selected": false},
+                {"answer": "Vietnam", "correct": false, "selected": false}
+
+            ]
+        },
+
+
+        {
+            "flashCardFront": "How do Rovers arrive into Space?",
+            "flashCardBack": "Lander Spacecraft",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "They are built once they get to Space", "correct": false, "selected": false},
+                {"answer": "Transported with robots", "correct": false, "selected": false},
+                {"answer": "Lander Spacecraft", "correct": true, "selected": false},
+                {"answer": "Airplane", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Which of the following best describes how a Rover must be built so that it may withstand high levels of acceleration, extreme temperatures, pressure variation, Hydroelectric?",
+            "flashCardBack": "Being reliable",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Being reliable", "correct": true, "selected": false},
+                {"answer": "Being small", "correct": false, "selected": false},
+                {"answer": "Being large", "correct": false, "selected": false},
+                {"answer": "Being fast", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Which of the following is one of the most important factors that an Engineer must consider while DESIGNING a Rover?",
+            "flashCardBack": "Human capacity",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Aesthetics", "correct": false, "selected": false},
+                {"answer": "Speed", "correct": false, "selected": false},
+                {"answer": "Human capacity", "correct": true, "selected": false},
+                {"answer": "Environmental issues", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+              "flashCardFront": "When BUILDING a Rover, what is one of the many factors an Engineer must consider?",
+              "flashCardBack": "Reliability",
+              "flashCardFlipped": false,
+              "questionText": "Location: Mission Control",
+              "answers": [
+                  {"answer": "Long-term health problems", "correct": false, "selected": false},
+                  {"answer": "Reliability", "correct": true, "selected": false},
+                  {"answer": "Environmental factors", "correct": false, "selected": false},
+                  {"answer": "Speed", "correct": false, "selected": false}
+
+              ]
+        }
+
+    ]
+}

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Mission 2
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-slides #slides>
+
+        <ion-slide class="start-slide">
+          <h2> Stellar! Now you're ready to begin your SECOND mission! You must correctly answer each trivia question. Keep a sharp eye out for CLUES and ANSWERS to all trivia questions. They can be found at the MARS EXHIBIT in the MISSION CONTROL ROOM. Refer to the map if you need help. Good Luck, cadet!  </h2>
+
+            <button ion-button color="primary" (click)="nextSlide()">LET'S GO</button>
+        </ion-slide>
+
+        <ion-slide *ngFor="let question of questions; let i = index;">
+
+            <h3>Question {{i+1}}</h3>
+
+            <flash-card [isFlipped]="question.flashCardFlipped">
+                <div class="flash-card-front" [innerHTML]="question.flashCardFront"></div>
+                <div class="flash-card-back" [innerHTML]="question.flashCardBack"></div>
+            </flash-card>
+
+            <h3>{{question.questionText}}</h3>
+
+            <ion-list no-lines radio-group>
+
+                <ion-item *ngFor="let answer of question.answers; let i = index;">
+
+                    <ion-label>{{i+1}}. {{answer.answer}}</ion-label>
+                    <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
+
+                </ion-item>
+
+            </ion-list>
+
+        </ion-slide>
+
+        <ion-slide>
+            <h2>Outstanding Effort, cadet! You have successfully completed your missions! Your Final Score is {{score} out of 10} </h2>
+
+            <button (click)="restartQuiz()" ion-button full color="primary">Try Again?</button>
+            <button (click)="goToHome()" ion-button full color="primary">BACK TO HOME</button>
+
+
+        </ion-slide>
+
+    </ion-slides>
+
+</ion-content>
