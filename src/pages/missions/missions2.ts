@@ -5,7 +5,7 @@ import { FlashCardComponent } from '../../components/flash-card/flash-card';
 import { MissionsPage } from '../missions/missions';
 import { DataProvider2 } from '../../providers/data/data1';
 
-
+import { MapPage } from '../map/map';
 
  @Component({
    selector: 'page-missions',
@@ -99,5 +99,9 @@ import { DataProvider2 } from '../../providers/data/data1';
            this.navCtrl.push(HomePage);
          }
 
+         goMap()
+         {
+            this.navCtrl.push(MapPage);
+         }
 
 }
