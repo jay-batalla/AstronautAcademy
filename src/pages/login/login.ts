@@ -28,6 +28,7 @@ export class LoginPage {
   ionViewDidLoad(){
     //this.loginService.getRemoteData();
     // this.loginService.sendLogin( this.login );
+    this.content
   }
 
   loginAlert(){
@@ -73,8 +74,7 @@ export class LoginPage {
 
   gosignUp(): void {
   	this.navCtrl.push(SignupPage, {
-  		password: this.password,
-  		email: this.email
+  		password: this.password
   	});
   }
 
@@ -88,7 +88,7 @@ export class LoginPage {
               this.first_name = "Jay";
               return true;
             }
-          else return false;
+          return false;
           break;
         case 'nikesh':
           if( password == 'nikesh')
@@ -97,7 +97,7 @@ export class LoginPage {
               this.first_name = "Nikesh";
               return true;
             }
-          else return false;
+          return false;
           break;
         case 'narinder':
           if( password == 'narinder')
@@ -106,7 +106,7 @@ export class LoginPage {
               this.first_name = "Narinder";
               return true;
             }
-          else return false;
+          return false;
           break;
         case 'sahana':
           if( password == 'sahana')
@@ -115,7 +115,7 @@ export class LoginPage {
               this.first_name = "Sahana";
               return true;
             }
-          else return false;
+          return false;
           break;
         default:
           return false;

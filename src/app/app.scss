@@ -18,3 +18,9 @@
 ion-content {
     background-image: url('../assets/imgs/background.jpg');
 }
+
+.no-scroll {
+  .scroll-content {
+    overflow: hidden !important;
+  }
+}
