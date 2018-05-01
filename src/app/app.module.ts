@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -18,6 +19,7 @@ import { MapPage } from '../pages/map/map';
 import { DataProvider } from '../providers/data/data';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { MissionsPage } from '../pages/missions/missions';
+import { LoginDataProvider } from '../providers/login-data/login-data';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { MissionsPage } from '../pages/missions/missions';
   imports: [
     BrowserModule,
     HttpModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -53,7 +56,8 @@ import { MissionsPage } from '../pages/missions/missions';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider
+    DataProvider,
+    LoginDataProvider
   ]
 })
 export class AppModule {}
