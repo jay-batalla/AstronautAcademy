@@ -112,8 +112,7 @@ import { MapPage } from '../map/map';
          goHome()
          {
             this.navCtrl.setRoot(HomePage, {
-                one_score: this.one_score,
-                two_score: this.two_score
+                one_score: this.one_score
             });
          }
      }

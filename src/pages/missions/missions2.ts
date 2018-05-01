@@ -24,7 +24,7 @@ import { MapPage } from '../map/map';
      questions: any;
 
     constructor(public navCtrl: NavController, public dataService: DataProvider2, public navParams: NavParams) {
-        one_score = navParams.get("one_score");
+        this.one_score = navParams.get("one_score");
     }
 
          ionViewDidLoad() {
