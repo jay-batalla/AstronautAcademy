@@ -20,6 +20,7 @@ import { DataProvider } from '../providers/data/data';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { MissionsPage } from '../pages/missions/missions';
 import { LoginDataProvider } from '../providers/login-data/login-data';
+import { LeaderboardPage } from '../pages/leaderboard/leaderboard';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { LoginDataProvider } from '../providers/login-data/login-data';
     PersonalityPage,
     MapPage,
     FlashCardComponent,
-    MissionsPage
+    MissionsPage,
+    LeaderboardPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { LoginDataProvider } from '../providers/login-data/login-data';
     QuizEndPage,
     PersonalityPage,
     MapPage,
-    MissionsPage
+    MissionsPage,
+    LeaderboardPage
   ],
   providers: [
     StatusBar,
