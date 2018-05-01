@@ -24,6 +24,7 @@ import { LoginDataProvider } from '../providers/login-data/login-data';
 import { Missions2Page } from '../pages/missions/missions2';
 import { LeaderboardPage } from '../pages/leaderboard/leaderboard';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
+import { ProgressPage } from '../pages/progress/progress';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
     MissionsPage,
     Missions2Page,
     ProgressBarComponent,
-    LeaderboardPage
+    LeaderboardPage,
+    ProgressPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,8 @@ import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
     MapPage,
     MissionsPage,
     Missions2Page,
-    LeaderboardPage
+    LeaderboardPage,
+    ProgressPage
   ],
   providers: [
     StatusBar,
