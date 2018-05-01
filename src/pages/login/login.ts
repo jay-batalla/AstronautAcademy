@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController } from 'ionic-angular';
 
-
 import { HomePage } from '../home/home';
 import { SignupPage } from '../signup/signup';
+import { LoginDataProvider } from '../../providers/login-data/login-data';
 
 @Component({
   selector: 'page-login',
@@ -12,18 +12,27 @@ import { SignupPage } from '../signup/signup';
 export class LoginPage {
 
   password: string;	
-  email: string;
+  username: string;
   first_name: string;
   role: string;
 
-  constructor(public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController) {
+  //login: any = {};
+
+  constructor(public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController, public loginService: LoginDataProvider) {
   	this.first_name = 'Jay';
   	this.role = 'Scientist';
+    // this.login.username = '';
+    // this.login.password = '';
   } 
+
+  ionViewDidLoad(){
+    //this.loginService.getRemoteData();
+    // this.loginService.sendLogin( this.login );
+  }
 
   loginAlert(){
   	let alert = this.alertCtrl.create({
-  		title: 'Wrong email or password',
+  		title: 'Wrong username or password',
   		subTitle: 'Please check your spelling',
   		buttons: ['Dismiss']
   	});
@@ -31,17 +40,14 @@ export class LoginPage {
   }
 
   checkLogin(): void {
-  	if( this.password == 'p' && this.email == 'b' ) {
-  		this.signInLoad();
-  		// this.navCtrl.setRoot(HomePage, {
-  		// 	first_name: this.first_name,
-  		// 	role: this.role
-  		// });
-  		// this.navCtrl.setRoot(HomePage);
-  	}
-  	else {
-  		this.loginAlert();
-  	}
+  		if ( this.verifyLogin(this.username, this.password) )
+         {
+          this.signInLoad();
+         }
+      else
+        {
+          this.loginAlert();
+        }
   }
 
   signInLoad() {
@@ -52,6 +58,8 @@ export class LoginPage {
   	loading.present();
 
   	setTimeout(() => {
+      // var myData = JSON.stringify({username: this.login.username, password: this.login.password});
+      // this.loginService.sendLogin( this.login );
   		this.navCtrl.setRoot(HomePage, {
   			first_name: this.first_name,
   			role: this.role
@@ -65,8 +73,47 @@ export class LoginPage {
 
   gosignUp(): void {
   	this.navCtrl.push(SignupPage, {
-  		password: this.password,
-  		email: this.email
+  		password: this.password
   	});
+  }
+
+  verifyLogin(username:string, password:string) {
+    switch( username )
+      {
+        case 'jay':
+          if( password == 'jay')
+            {
+              this.role = 'Scientist';
+              this.first_name = "Jay";
+              return true;
+            }
+          return false;
+        case 'nikesh':
+          if( password == 'nikesh')
+            {
+              this.role = 'Navigator';
+              this.first_name = "Nikesh";
+              return true;
+            }
+          return false;
+        case 'narinder':
+          if( password == 'narinder')
+            {
+              this.role = 'Engineer';
+              this.first_name = "Narinder";
+              return true;
+            }
+          return false;
+        case 'sahana':
+          if( password == 'sahana')
+            {
+              this.role = 'Dcotor';
+              this.first_name = "Sahana";
+              return true;
+            }
+          return false;
+        default:
+          return false;
+      }
   }
 }

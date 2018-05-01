@@ -1,43 +1,32 @@
-<!-- <ion-header>
-  <ion-navbar>
-    <ion-title>
-      This is the log-in page.
-    </ion-title>
-  </ion-navbar>
-</ion-header> -->
-
-
-
-<ion-content padding no-bounce scroll="false">
-<!-- <div ion-fixed> -->
+<ion-content padding no-bounce class="no-scroll">
 
   <div>
-  <img src="../assets/imgs/astronautlogo.png" width="200" height="200" style="margin-left: auto; margin-right: auto; display: block;">
+    <img src="../assets/imgs/astronautlogo.png" width="200" height="200" style="margin-left: auto; margin-right: auto; display: block;">
   </div>
 
   <div class="spacer" style="width: 300px; height: 25px;"></div>
 
+
   <ion-list>
 
-  <ion-item>
-    <ion-label fixed>Email</ion-label>
-    <ion-input [(ngModel)]="email" type="email"></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input [(ngModel)]="username" type="email"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label fixed>Password</ion-label>
-    <ion-input [(ngModel)]="password" type="password"></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
 
-</ion-list>
+  </ion-list>
 
 <button ion-button large full (click)="checkLogin()">Log In</button>
 
-<div class="spacer" style="width: 300px; height: 150px;"></div>
+<div class="spacer" style="width: 300px; height: 115px;"></div>
 
-<p style="color: white; text-align: center;">Don't Have an Account?</p>
+  <p style="color: white; text-align: center;">Don't Have an Account?</p>
 
 <button ion-button large full (click)="gosignUp()">Create An Account</button>
 
-<!-- </div> -->
 </ion-content>

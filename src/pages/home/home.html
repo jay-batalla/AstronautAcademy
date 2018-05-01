@@ -1,14 +1,14 @@
-<ion-content padding>
+<ion-content padding no-bounce class="no-scroll">
 
   <button style="text-align: left" ion-button round small strong color="danger" (click)="signOutLoad()">Sign out</button>
 
-  <div class="spacer" style="width: 300px; height: 15px;"></div>
+  <!-- <div class="spacer" style="width: 300px; height: 10px;"></div> -->
 
   <h1 style="color: white; text-align: center; font-size: 56px"> <b>Astronaut Academy</b> </h1>
 
   <h3 style="color: white; text-align: center"> Cadet Name: {{first_name}} • Role: {{role}} </h3>
 
-  <div class="spacer" style="width: 300px; height: 65px;"></div>
+  <div class="spacer" style="width: 300px; height: 35px;"></div>
 
   <button ion-button full large (click)="goToMissions()">Missions</button>
 
@@ -22,7 +22,7 @@
 
   <div class="spacer" style="width: 300px; height: 5px;"></div>
 
-  <button ion-button full large>Leaderboard</button>
+  <button ion-button full large (click)="goToLeaderboard()">Leaderboard</button>
 
   <div class="spacer" style="width: 300px; height: 5px;"></div>
 

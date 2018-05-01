@@ -6,7 +6,7 @@
 
 </ion-header>
 
-<ion-content>
+<ion-content padding no-bounce class="no-scroll">
 
     <ion-slides #slides>
 
@@ -35,6 +35,10 @@
                     <ion-radio (click)="selectAnswer(answer, question)" [checked]="answer.selected" [disabled]="hasAnswered"></ion-radio>
 
                 </ion-item>
+
+                <button (click)="goMap()">
+                    Stuck? Find the answer here!
+                </button>
 
             </ion-list>
 

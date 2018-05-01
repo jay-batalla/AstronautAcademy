@@ -5,6 +5,8 @@ import { HomePage } from '../home/home';
 import { FlashCardComponent } from '../../components/flash-card/flash-card';
 
 
+import { MapPage } from '../map/map';
+
 /**
  * Generated class for the MissionsPage page.
  *
@@ -92,6 +94,10 @@ import { FlashCardComponent } from '../../components/flash-card/flash-card';
              this.slides.lockSwipes(false);
              this.slides.slideTo(1, 1000);
              this.slides.lockSwipes(true);
+         }
+
+         goMap() {
+            this.navCtrl.push(MapPage);
          }
 
      }
