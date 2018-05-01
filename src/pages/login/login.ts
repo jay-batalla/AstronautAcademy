@@ -28,12 +28,11 @@ export class LoginPage {
   ionViewDidLoad(){
     //this.loginService.getRemoteData();
     // this.loginService.sendLogin( this.login );
-    this.content
   }
 
   loginAlert(){
   	let alert = this.alertCtrl.create({
-  		title: 'Wrong email or password',
+  		title: 'Wrong username or password',
   		subTitle: 'Please check your spelling',
   		buttons: ['Dismiss']
   	});
@@ -89,7 +88,6 @@ export class LoginPage {
               return true;
             }
           return false;
-          break;
         case 'nikesh':
           if( password == 'nikesh')
             {
@@ -98,7 +96,6 @@ export class LoginPage {
               return true;
             }
           return false;
-          break;
         case 'narinder':
           if( password == 'narinder')
             {
@@ -107,7 +104,6 @@ export class LoginPage {
               return true;
             }
           return false;
-          break;
         case 'sahana':
           if( password == 'sahana')
             {
@@ -116,10 +112,8 @@ export class LoginPage {
               return true;
             }
           return false;
-          break;
         default:
           return false;
-          break;
       }
   }
 }
