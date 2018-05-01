@@ -16,13 +16,15 @@ import { MapPage } from '../map/map';
      @ViewChild('slides') slides: any;
 
      hasAnswered: boolean = false;
-     score: number = 0;
+     two_score: number = 0;
+     one_score: number;
+
 
      slideOptions: any;
      questions: any;
 
-    constructor(public navCtrl: NavController, public dataService: DataProvider2) {
-
+    constructor(public navCtrl: NavController, public dataService: DataProvider2, public navParams: NavParams) {
+        one_score = navParams.get("one_score");
     }
 
          ionViewDidLoad() {
@@ -58,7 +60,7 @@ import { MapPage } from '../map/map';
              question.flashCardFlipped = true;
 
              if(answer.correct){
-                 this.score++;
+                 this.two_score++;
              }
 
              setTimeout(() => {
@@ -83,7 +85,7 @@ import { MapPage } from '../map/map';
          }
 
          restartQuiz() {
-             this.score = 0;
+             this.two_score = 0;
              this.slides.lockSwipes(false);
              this.slides.slideTo(1, 1000);
              this.slides.lockSwipes(true);
@@ -96,7 +98,10 @@ import { MapPage } from '../map/map';
 
          goToHome()
          {
-           this.navCtrl.push(HomePage);
+           this.navCtrl.push(HomePage, {
+            one_score: this.one_score,
+            two_score: this.two_score
+           });
          }
 
          goMap()

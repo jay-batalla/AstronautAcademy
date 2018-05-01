@@ -16,10 +16,14 @@ export class HomePage {
   first_name: string;
   role: string;
   mapPage: any;
+  one_score: number;
+  two_score: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private loadingCtrl: LoadingController) {
   	this.first_name = navParams.get("first_name");
   	this.role = navParams.get("role");
+    this.one_score = navParams.get("one_score");
+    this.two_score = navParams.get("two_score");
   }
 
 
@@ -56,7 +60,11 @@ export class HomePage {
 
     goToProgress()
     {
-      this.navCtrl.push(ProgressPage);
+      this.one_score = 7;
+      this.navCtrl.push(ProgressPage, {
+        one_score: this.one_score,
+        two_score: this.two_score
+      });
     }
 
 }

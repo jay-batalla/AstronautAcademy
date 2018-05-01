@@ -10,11 +10,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProgressPage {
 
+  // one_best: number;
+  // two_best: number;
+  // one_score: number;
+  // two_score: number;
+
 //  loadProgress: number = 0;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
+  //   one_score = navParams.get("one_score");
+  //   two_score = navParams.get("two_score");
+  //   if( one_score >= one_best )
+  //      {
+  //       one_best = one_score;
+  //      }
+  //   if( two_score >= two_best)
+  //   {
+  //     two_best = two_score;
+  //   }
+  // }
+}
   ionViewDidLoad() {
+
   /*  setInterval() =>
      {
       if(this.loadProgress < 100)
