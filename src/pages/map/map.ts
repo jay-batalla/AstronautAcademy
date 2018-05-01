@@ -45,13 +45,62 @@ export class MapPage {
       //touch me popup to go indoors
       map.openPopup("Touch Me!", [39.52590569999999, -119.80886459999999], { elevation: 10.0 });
 
-      //Sample highlighted area of museum
+      //Sample highlighted area of museum 
       L.circle([39.52578148753415, -119.80921509900838], {
-      radius: 3.0,
+      radius: 1.0,
       indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
-      indoorMapFloorId: 0
+      indoorMapFloorId: 0,
+      color: "blue"
       }).addTo(map);
 
+      L.circle([39.52571027963978, -119.80919503721776], {
+      radius: 1.0,
+      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0,
+      color: "blue"
+      }).addTo(map);
+
+      L.circle([39.525747943020825, -119.80902788424864], {
+      radius: 1.0,
+      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0,
+      color: "blue"
+      }).addTo(map);
+
+      L.circle([39.52581990527052, -119.80906928329938], {
+      radius: 1.0,
+      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0,
+      color: "blue"
+      }).addTo(map);
+
+      L.circle([39.52620262949059, -119.80869848179105], {
+      radius: 1.0,
+      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0,
+      color: "red"
+      }).addTo(map);
+
+      L.circle([39.52622603318108, -119.8085820464271], {
+      radius: 1.0,
+      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0,
+      color: "red"
+      }).addTo(map);
+
+      L.circle([39.52616691387283, -119.80858290368029], {
+      radius: 1.0,
+      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0,
+      color: "red"
+      }).addTo(map);
+
+      L.circle([39.52616762457792, -119.80864557083389], {
+      radius: 1.0,
+      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0,
+      color: "red"
+      }).addTo(map);
       //precache map to load faster and work offline
       //var cacheCompleteCallback = function(success) {
         //if (success) {
