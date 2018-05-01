@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { FlashCardComponent } from './flash-card/flash-card';
-
-
+import { ProgressBarComponent } from './progress-bar/progress-bar';
 @NgModule({
-	declarations: [FlashCardComponent],
+	declarations: [FlashCardComponent,
+    ProgressBarComponent],
 	imports: [],
-	exports: [FlashCardComponent], 
+	exports: [FlashCardComponent,
+    ProgressBarComponent]
 })
 export class ComponentsModule {}
