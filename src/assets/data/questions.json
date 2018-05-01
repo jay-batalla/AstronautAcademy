@@ -100,7 +100,7 @@
         },
 
         {
-            "flashCardFront": "Which of the following best describes how a Rover must be built so that it may withstand high levels of acceleration, extreme temperatures, pressure variation, Hydroelectric?",
+            "flashCardFront": "Which of the following best describes how a Rover must be built so that it may withstand high levels of acceleration, extreme temperatures, pressure variation,etc?",
             "flashCardBack": "Being reliable",
             "flashCardFlipped": false,
             "questionText": "Location: Rover Exhibit",

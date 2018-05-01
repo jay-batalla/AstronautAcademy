@@ -43,100 +43,100 @@
         },
 
         {
-            "flashCardFront": "A Rover relies on which of the following for it to be able to move?",
-            "flashCardBack": "Nuclear Energy",
+            "flashCardFront": "What is the location of Mars in relation to the Sun?",
+            "flashCardBack": "4th Planet",
             "flashCardFlipped": false,
             "questionText": "Location: Mission Control",
             "answers": [
-                {"answer": "Geothermal Energy", "correct": false, "selected": false},
-                {"answer": "Nuclear Energy", "correct": true, "selected": false},
-                {"answer": "Hydroelectric Energy", "correct": false, "selected": false},
-                {"answer": "Wind Energy", "correct": false, "selected": false}
+                {"answer": "4th Planet", "correct": false, "selected": false},
+                {"answer": "5th Planet", "correct": true, "selected": false},
+                {"answer": "2nd Planet", "correct": false, "selected": false},
+                {"answer": "3rd Planet", "correct": false, "selected": false}
 
             ]
         },
 
         {
-            "flashCardFront": "Who was the first to build and send a rover to the Moon in the 1960s?",
-            "flashCardBack": "Russia",
+            "flashCardFront": "What is another name for Mars?",
+            "flashCardBack": "Red Planet",
             "flashCardFlipped": false,
             "questionText": "Location: Mission Control",
             "answers": [
-                {"answer": "China", "correct": false, "selected": false},
-                {"answer": "India", "correct": false, "selected": false},
-                {"answer": "Germany", "correct": false, "selected": false},
-                {"answer": "Russia", "correct": true, "selected": false}
+                {"answer": "Fire Planet", "correct": false, "selected": false},
+                {"answer": "Red Planet", "correct": false, "selected": false},
+                {"answer": "Hot Planet", "correct": false, "selected": false},
+                {"answer": "Black Planet", "correct": true, "selected": false}
 
             ]
         },
 
         {
-            "flashCardFront": "Which of the following was the first to send humans to the Moon?",
-            "flashCardBack": "America",
+            "flashCardFront": "If an Astronaut weighs 150 lbs. on Earth how much would he or she weight on Mars?",
+            "flashCardBack": "57 lbs",
             "flashCardFlipped": false,
             "questionText": "Location: Mission Control",
             "answers": [
-                {"answer": "America", "correct": true, "selected": false},
-                {"answer": "France", "correct": false, "selected": false},
-                {"answer": "Japan", "correct": false, "selected": false},
-                {"answer": "Vietnam", "correct": false, "selected": false}
+                {"answer": "57 lbs", "correct": true, "selected": false},
+                {"answer": "25 lbs", "correct": false, "selected": false},
+                {"answer": "100 lbs", "correct": false, "selected": false},
+                {"answer": "77 lbs", "correct": false, "selected": false}
 
             ]
         },
 
 
         {
-            "flashCardFront": "How do Rovers arrive into Space?",
-            "flashCardBack": "Lander Spacecraft",
+            "flashCardFront": "What are the names of the Moons on Mars?",
+            "flashCardBack": "Phobos and Deimos",
             "flashCardFlipped": false,
             "questionText": "Location: Mission Control",
             "answers": [
-                {"answer": "They are built once they get to Space", "correct": false, "selected": false},
-                {"answer": "Transported with robots", "correct": false, "selected": false},
-                {"answer": "Lander Spacecraft", "correct": true, "selected": false},
-                {"answer": "Airplane", "correct": false, "selected": false}
+                {"answer": "Phobos and Cronos", "correct": false, "selected": false},
+                {"answer": "Olympus and Zeus", "correct": false, "selected": false},
+                {"answer": "Cronos and Olympus", "correct": true, "selected": false},
+                {"answer": "Phobos and Deimos", "correct": false, "selected": false}
 
             ]
         },
 
         {
-            "flashCardFront": "Which of the following best describes how a Rover must be built so that it may withstand high levels of acceleration, extreme temperatures, pressure variation, Hydroelectric?",
-            "flashCardBack": "Being reliable",
+            "flashCardFront": "Mars is similar to Earth in what sense?",
+            "flashCardBack": "The Martian day, seasonal cycles, and the tilt that produces the seasons",
             "flashCardFlipped": false,
             "questionText": "Location: Mission Control",
             "answers": [
-                {"answer": "Being reliable", "correct": true, "selected": false},
-                {"answer": "Being small", "correct": false, "selected": false},
-                {"answer": "Being large", "correct": false, "selected": false},
-                {"answer": "Being fast", "correct": false, "selected": false}
+                {"answer": "The Martian day, seasonal cycles, and the tilt that produces the seasons", "correct": true, "selected": false},
+                {"answer": "The moons and seasonal cycles", "correct": false, "selected": false},
+                {"answer": "Thin atmosphere", "correct": false, "selected": false},
+                {"answer": "Amount of atmospheric pressure", "correct": false, "selected": false}
 
             ]
         },
 
         {
-            "flashCardFront": "Which of the following is one of the most important factors that an Engineer must consider while DESIGNING a Rover?",
-            "flashCardBack": "Human capacity",
+            "flashCardFront": "What is Olympus Mons?",
+            "flashCardBack": "Largest volcano and second-highest mountain yet discovered in the solar system",
             "flashCardFlipped": false,
             "questionText": "Location: Mission Control",
             "answers": [
-                {"answer": "Aesthetics", "correct": false, "selected": false},
-                {"answer": "Speed", "correct": false, "selected": false},
-                {"answer": "Human capacity", "correct": true, "selected": false},
-                {"answer": "Environmental issues", "correct": false, "selected": false}
+                {"answer": "Largest volcano and second-highest mountain yet discovered in the solar system", "correct": false, "selected": false},
+                {"answer": "Smallest mountain yet discovered in the solar system", "correct": false, "selected": false},
+                {"answer": "Mar’s Moon", "correct": true, "selected": false},
+                {"answer": "Highest mountain and second-largest volcano yet discovered in the solar system", "correct": false, "selected": false}
 
             ]
         },
 
         {
-              "flashCardFront": "When BUILDING a Rover, what is one of the many factors an Engineer must consider?",
-              "flashCardBack": "Reliability",
+              "flashCardFront": "How many Moons does Mars have?",
+              "flashCardBack": "2",
               "flashCardFlipped": false,
               "questionText": "Location: Mission Control",
               "answers": [
-                  {"answer": "Long-term health problems", "correct": false, "selected": false},
-                  {"answer": "Reliability", "correct": true, "selected": false},
-                  {"answer": "Environmental factors", "correct": false, "selected": false},
-                  {"answer": "Speed", "correct": false, "selected": false}
+                  {"answer": "1", "correct": false, "selected": false},
+                  {"answer": "3", "correct": true, "selected": false},
+                  {"answer": "2", "correct": false, "selected": false},
+                  {"answer": "5", "correct": false, "selected": false}
 
               ]
         }
