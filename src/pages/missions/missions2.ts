@@ -110,4 +110,9 @@ import { MapPage } from '../map/map';
             this.navCtrl.push(MapPage);
          }
 
+         goToHome()
+         {
+           this.navCtrl.push(HomePage);
+         }
+
 }
