@@ -3,16 +3,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { FlashCardComponent } from '../../components/flash-card/flash-card';
 import { MissionsPage } from '../missions/missions';
-import { Missions3Page } from '../missions/missions3';
 import { DataProvider2 } from '../../providers/data/data1';
 
 import { MapPage } from '../map/map';
 
  @Component({
    selector: 'page-missions',
-   templateUrl: 'missions2.html'
+   templateUrl: 'missions5.html'
  })
- export class Missions2Page {
+ export class Missions5Page {
 
      @ViewChild('slides') slides: any;
 
@@ -90,12 +89,8 @@ import { MapPage } from '../map/map';
              this.slides.lockSwipes(true);
          }
 
-         goToMission3()
-         {
-           this.navCtrl.push(Missions3Page);
-         }
 
-         goToProgress()
+         goToHome()
          {
            this.navCtrl.push(HomePage);
          }
