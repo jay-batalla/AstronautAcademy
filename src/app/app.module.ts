@@ -20,8 +20,11 @@ import { DataProvider } from '../providers/data/data';
 import { DataProvider2 } from '../providers/data/data1';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { MissionsPage } from '../pages/missions/missions';
-import { LoginDataProvider } from '../providers/login-data/login-data';
 import { Missions2Page } from '../pages/missions/missions2';
+import { Missions3Page } from '../pages/missions/missions3';
+import { Missions4Page } from '../pages/missions/missions4';
+import { Missions5Page } from '../pages/missions/missions5';
+import { LoginDataProvider } from '../providers/login-data/login-data';
 import { LeaderboardPage } from '../pages/leaderboard/leaderboard';
 import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 import { ProgressPage } from '../pages/progress/progress';
@@ -39,6 +42,9 @@ import { ProgressPage } from '../pages/progress/progress';
     FlashCardComponent,
     MissionsPage,
     Missions2Page,
+    Missions3Page,
+    Missions4Page,
+    Missions5Page,
     ProgressBarComponent,
     LeaderboardPage,
     ProgressPage
@@ -61,6 +67,8 @@ import { ProgressPage } from '../pages/progress/progress';
     MapPage,
     MissionsPage,
     Missions2Page,
+    Missions3Page,
+    Missions4Page,
     LeaderboardPage,
     ProgressPage
   ],
