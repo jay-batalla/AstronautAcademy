@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {LocateControl } from 'leaflet.locatecontrol';
+import { MissionsPage } from '../missions/missions';
+import { HomePage } from '../pages/home/home';
 
 /**
  * Generated class for the MapPage page.
@@ -99,17 +101,11 @@ export class MapPage {
       radius: 1.0,
       indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
       indoorMapFloorId: 0,
-      color: "red"
+      color: "red",
       }).addTo(map);
-      //precache map to load faster and work offline
-      //var cacheCompleteCallback = function(success) {
-        //if (success) {
-          //console.log("Caching complete");
-        //} else {
-         // console.log("Caching failed");
-        //}
-      //}
-      //map.precache([39.62590569999999, -119.90886459999999], 2000, cacheCompleteCallback);
+
+      map.openPopup("Mission 1: Rover Mission!", [39.52624882180367, -119.80857799982343], { color: "red", indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0, closeOnClick: false });
 
       //debug for poi points to latLng
       map.on('click', function(e) {
@@ -118,8 +114,17 @@ export class MapPage {
 
       //debug
       function onEnter(event) {
-          console.log("Entered indoor map: " + event.indoorMap.getIndoorMapId());
-          console.log("Entered indoor map: " + event.indoorMap.getIndoorMapName());
+        console.log("Entered indoor map: " + event.indoorMap.getIndoorMapId());
+        console.log("Entered indoor map: " + event.indoorMap.getIndoorMapName());
+        var cacheCompleteCallback = function(success)
+        {
+        if (success) {
+          console.log("Caching complete");
+      } else {
+         console.log("Caching failed");
+        }
+      }
+        map.precache([39.62590569999999, -119.90886459999999], 2000, cacheCompleteCallback);
       }
 
       function onExit(event) {
@@ -129,21 +134,10 @@ export class MapPage {
       map.indoors.on("indoormapexit", onExit)
 
 
-      L.control.locate({
-         position: 'topleft',
-         setView: 'always',
-         drawMarker: true,
-         drawCircle: true,
-         strings: {
-         title: "Show me where I am!"
-         },
-         locateOptions: {
-               enableHighAccuracy: true
-         }
-      }).addTo(map);
-
-
   }
 
-
+      goToMissions()
+    {
+      this.navCtrl.push(MissionsPage);
+    }
 }
