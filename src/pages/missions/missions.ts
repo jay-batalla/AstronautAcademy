@@ -11,12 +11,6 @@ import { Missions5Page } from '../missions/missions5';
 import { MapPage } from '../map/map';
 
 
-/**
- * Generated class for the MissionsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
  @Component({
    selector: 'page-missions',

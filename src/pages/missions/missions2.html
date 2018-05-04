@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content>
-
+  <!-- second mission -->
     <ion-slides #slides>
 
         <ion-slide class="start-slide">
@@ -36,10 +36,6 @@
 
                 </ion-item>
 
-                    <button (click)="goMap()">
-                    Stuck? Click to View the Map!
-                </button>
-
             </ion-list>
 
         </ion-slide>
@@ -47,7 +43,10 @@
         <ion-slide>
             <h2>Outstanding Effort, cadet! You have successfully completed your missions! Your Final Score is {{two_score}} out of 10</h2>
 
+
             <button (click)="restartQuiz()" ion-button full color="primary">Try Again?</button>
+            <button (click)="goToHome()" ion-button full color="primary">BACK TO HOME</button>
+            <button (click)="goMap()" ion-button full color="primary">GO TO MAP (BEFORE NEXT MISSION!)</button>
             <button (click)="goToMission3()" ion-button full color="primary">NEXT MISSION</button>
 
 

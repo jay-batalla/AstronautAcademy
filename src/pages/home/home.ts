@@ -8,6 +8,7 @@ import { Missions0Page } from '../missions/missions0';
 import { LeaderboardPage } from '../leaderboard/leaderboard';
 import { ProgressPage } from '../progress/progress';
 
+// home page
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'

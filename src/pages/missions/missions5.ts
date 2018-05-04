@@ -7,6 +7,7 @@ import { DataProvider5 } from '../../providers/data/data4';
 
 import { MapPage } from '../map/map';
 
+// Mission 5 Page
  @Component({
    selector: 'page-missions',
    templateUrl: 'missions5.html'
