@@ -21,9 +21,10 @@ import { MapPage } from '../map/map';
      two_score: number = 0;
      one_score: number;
 
-
      slideOptions: any;
      questions: any;
+
+
 
     constructor(public navCtrl: NavController, public dataService: DataProvider2, public navParams: NavParams) {
         this.one_score = navParams.get("one_score");
@@ -115,5 +116,5 @@ import { MapPage } from '../map/map';
          {
            this.navCtrl.push(HomePage);
          }
-
+}
 }

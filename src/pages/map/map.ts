@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {LocateControl } from 'leaflet.locatecontrol';
-import { MissionsPage } from '../missions/missions';
+import { Missions0Page } from '../missions/missions0';
 
 /**
  * Generated class for the MapPage page.
