@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
@@ -15,7 +15,7 @@ export class ProgressPage {
   // one_score: number;
   // two_score: number;
 
-//  loadProgress: number = 0;
+  //loadProgress: number = 0;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   //   one_score = navParams.get("one_score");
   //   two_score = navParams.get("two_score");
@@ -31,13 +31,14 @@ export class ProgressPage {
 }
   ionViewDidLoad() {
 
-  /*  setInterval() =>
+    /*setInterval() =>
      {
       if(this.loadProgress < 100)
       {
         this.loadProgress++;
       }
 
-    }, 50); */
-  }
+    }, 50);
+  }  */
+}
 }
