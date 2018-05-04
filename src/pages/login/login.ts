@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController, LoadingController } from 'ionic-angular';
+import { NavController, AlertController, LoadingController, NavParams } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
 import { SignupPage } from '../signup/signup';
@@ -11,18 +11,23 @@ import { LoginDataProvider } from '../../providers/login-data/login-data';
 })
 export class LoginPage {
 
-  password: string;	
-  username: string;
-  first_name: string;
   role: string;
-
+  first_name: string;
+  last_name: string;
+  email: string;
+  password: string;
+  username: string;
+  loginUser: string;
+  loginPass: string;
   //login: any = {};
 
-  constructor(public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController, public loginService: LoginDataProvider) {
-  	this.first_name = 'Jay';
-  	this.role = 'Scientist';
-    // this.login.username = '';
-    // this.login.password = '';
+  constructor(public navParams: NavParams, public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController, public loginService: LoginDataProvider) {
+  	this.role = this.initial_role = navParams.get("role");
+    this.first_name = navParams.get("first_name");
+    this.last_name = navParams.get("last_name");
+    this.email = navParams.get("email");
+    this.password = navParams.get("password");
+    this.username = navParams.get("username");
   } 
 
   ionViewDidLoad(){
@@ -40,7 +45,7 @@ export class LoginPage {
   }
 
   checkLogin(): void {
-  		if ( this.verifyLogin(this.username, this.password) )
+  		if ( this.verifyLogin(this.loginUser, this.loginPass) )
          {
           this.signInLoad();
          }
@@ -61,8 +66,12 @@ export class LoginPage {
       // var myData = JSON.stringify({username: this.login.username, password: this.login.password});
       // this.loginService.sendLogin( this.login );
   		this.navCtrl.setRoot(HomePage, {
-  			first_name: this.first_name,
-  			role: this.role
+  			role: this.role,
+      first_name: this.first_name,
+          last_name: this.last_name,
+          email: this.email,
+          password: this.password,
+          username: this.username
   		});
   	}, 2000);
 
@@ -81,37 +90,47 @@ export class LoginPage {
     switch( username )
       {
         case 'jay':
-          if( password == 'jay')
+          if( this.loginPass == 'jay')
             {
               this.role = 'Scientist';
               this.first_name = "Jay";
+              this.username = 'jay';
               return true;
             }
           return false;
         case 'nikesh':
-          if( password == 'nikesh')
+          if( this.loginPass == 'nikesh')
             {
               this.role = 'Navigator';
               this.first_name = "Nikesh";
+              this.first_name = 'nikesh';
               return true;
             }
           return false;
         case 'narinder':
-          if( password == 'narinder')
+          if( this.loginPass == 'narinder')
             {
               this.role = 'Engineer';
               this.first_name = "Narinder";
+              this.username = 'narider';
               return true;
             }
           return false;
         case 'sahana':
-          if( password == 'sahana')
+          if( this.loginPass == 'sahana')
             {
               this.role = 'Dcotor';
               this.first_name = "Sahana";
+              this.username = 'sahana';
               return true;
             }
           return false;
+        case this.username:
+         if( this.loginPass == this.password )
+         {
+          return true;
+         }
+         return false;
         default:
           return false;
       }

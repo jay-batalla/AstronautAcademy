@@ -11,6 +11,10 @@ import { QuizEndPage } from '../quiz-end/quiz-end';
 export class PersonalityPage {
 
   first_name: string;
+  last_name: string;
+  email: string;
+  password: string;
+  username: string;
   question: string;
   role: string;
   scientist_answer: string; sci: number;
@@ -27,7 +31,11 @@ export class PersonalityPage {
   	this.doctor_answer = "A doctor";
   	this.sci = this.nav = this.eng = this.doc = 0;
   	this.question_number = 1;
-    this.first_name = navParams.get('first_name');
+    this.first_name = navParams.get("first_name");
+    this.last_name = navParams.get("last_name");
+    this.email = navParams.get("email");
+    this.password = navParams.get("password");
+    this.username = navParams.get("username");
   }
 
   ionViewDidLoad() {
@@ -66,7 +74,11 @@ export class PersonalityPage {
         this.determineRole( answers );
   	   	this.navCtrl.setRoot(QuizEndPage, {
           role: this.role,
-          first_name: this.first_name
+          first_name: this.first_name,
+          last_name: this.last_name,
+          email: this.email,
+          password: this.password,
+          username: this.username
         });
   	   }
   	else

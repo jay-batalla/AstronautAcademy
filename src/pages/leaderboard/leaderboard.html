@@ -9,21 +9,21 @@
 <ion-content padding>
 <ion-card>
     <ion-card-header class ="centered" id="header_classifica" >
-        <div > USER you are in position XXX</div>
+        <div > {{first_name}}, you are in position {{location}}</div>
   </ion-card-header>
 
     <div id="table">
         <div class="row header">
             <div class="col classifica"> <b class="voci_table_header"> Rank</b></div>
             <div class="col classifica"> <b class="voci_table_header"> Username</b></div>
-            <div class="col classifica"> <b class="voci_table_header"> Score</b></div>
+            <div class="col classifica"> <b class="voci_table_header"> Progress</b></div>
 
         </div>
 
-        <div class="row" *ngFor="let item of items; let i = index">
+        <div class="row" *ngFor="let user of users; let i = index">
             <div class="col classifica">{{i + 1}}</div>
-            <div class="col classifica">{{ item.username }} </div>
-            <div class="col classifica">{{ item.total_points }} </div>
+            <div class="col classifica">{{ user.username }} </div>
+            <div class="col classifica">{{ user.progress }}% </div>
         </div>
 
     </div>

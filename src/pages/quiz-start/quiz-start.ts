@@ -12,10 +12,16 @@ export class QuizStartPage {
 
   first_name: string;
   last_name: string;
+  email: string;
+  password: string;
+  username: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.first_name = navParams.get("first_name");
   	this.last_name = navParams.get("last_name");
+    this.email = navParams.get("email");
+    this.password = navParams.get("password");
+    this.username = navParams.get("username");
   }
 
   ionViewDidLoad() {
@@ -25,6 +31,10 @@ export class QuizStartPage {
   startQuiz() {
     this.navCtrl.setRoot( PersonalityPage, {
       first_name: this.first_name,
+      last_name: this.last_name,
+      email: this.email,
+      password: this.password,
+      username: this.username
     });
   }
 

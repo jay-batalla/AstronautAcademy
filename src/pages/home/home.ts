@@ -14,6 +14,10 @@ import { ProgressPage } from '../progress/progress';
 export class HomePage {
 
   first_name: string;
+  last_name: string;
+  email: string;
+  password: string;
+  username: string;
   role: string;
   mapPage: any;
   one_score: number;
@@ -21,6 +25,10 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private loadingCtrl: LoadingController) {
   	this.first_name = navParams.get("first_name");
+    this.last_name = navParams.get("last_name");
+    this.email = navParams.get("email");
+    this.password = navParams.get("password");
+    this.username = navParams.get("username");
   	this.role = navParams.get("role");
     this.one_score = navParams.get("one_score");
     this.two_score = navParams.get("two_score");
@@ -35,7 +43,14 @@ export class HomePage {
   	loading.present();
 
   	setTimeout(() => {
-  		this.navCtrl.setRoot(LoginPage);
+  		this.navCtrl.setRoot(LoginPage, {
+        role: this.role,
+         first_name: this.first_name,
+          last_name: this.last_name,
+          email: this.email,
+          password: this.password,
+          username: this.username
+      });
   	}, 1000);
 
   	setTimeout(() => {
@@ -55,7 +70,10 @@ export class HomePage {
 
     goToLeaderboard()
     {
-      this.navCtrl.push(LeaderboardPage);
+      this.navCtrl.push(LeaderboardPage, {
+        first_name: this.first_name,
+        username: this.username
+      });
     }
 
     goToProgress()

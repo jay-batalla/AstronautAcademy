@@ -20,11 +20,20 @@ export class QuizEndPage {
   initial_role: string;
   role: string;
   first_name: string;
+  last_name: string;
+  email: string;
+  password: string;
+  username: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.role = this.initial_role = navParams.get("role");
   	this.first_name = navParams.get("first_name");
+    this.last_name = navParams.get("last_name");
+    this.email = navParams.get("email");
+    this.password = navParams.get("password");
+    this.username = navParams.get("username");
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuizEndPage');
@@ -49,7 +58,11 @@ export class QuizEndPage {
   goHome() {
   	this.navCtrl.setRoot( HomePage, {
   		role: this.role,
-  		first_name: this.first_name
+  		first_name: this.first_name,
+          last_name: this.last_name,
+          email: this.email,
+          password: this.password,
+          username: this.username
   	});
   }
 
