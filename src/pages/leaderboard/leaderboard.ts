@@ -21,7 +21,7 @@ export class LeaderboardPage {
   first_name: string;
   progress: number;
   location: number;
-  users: Array<Object>;
+  users: Array<any>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.first_name = navParams.get("first_name");
@@ -40,17 +40,24 @@ export class LeaderboardPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LeaderboardPage');
 
-    for( var i = 0; i < this.users.length; i++ )
-     {
-      if( this.username == this.users[i].username ) {
+    function search( username:string ) : boolean
+  {
+    for( var k = 0; k < this.users.length; k++ )
+       {
+        if( this.users[k].username == username )
+        {
+          return true;
+        }
+       }
+  }
+
+      if( search(this.username) ) {
         //do nothing
       }
       else //if the username doesn't appear, add it to array
          {
           this.users.push({username: this.username, progress: 20});
-          break;
          }
-     }
 
     console.log(this.users);
 
@@ -88,5 +95,6 @@ export class LeaderboardPage {
     //   return this.items;
     // });
   }
+
 }
 

@@ -117,4 +117,3 @@ import { MapPage } from '../map/map';
            this.navCtrl.push(HomePage);
          }
 }
-}
