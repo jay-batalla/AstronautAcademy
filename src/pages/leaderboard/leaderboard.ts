@@ -30,13 +30,27 @@ export class LeaderboardPage {
     {username: 'jay', progress: 35},
     {username: 'nikesh', progress: 50},
     {username: 'sahana', progress: 75},
-    {username: 'narinder', progress: 25},
+    {username: 'narinder', progress: 0},
+    {username: 'devrin', progress: 85},
+    {username: 'sergiu', progress: 60},
+    {username: 's.glove', progress: 100},
   ];
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LeaderboardPage');
 
+    for( var i = 0; i < this.users.length; i++ )
+     {
+      if( this.username == this.users[i].username ) {
+        //do nothing
+      }
+      else //if the username doesn't appear, add it to array
+         {
+          this.users.push({username: this.username, progress: 20});
+          break;
+         }
+     }
 
     console.log(this.users);
 
