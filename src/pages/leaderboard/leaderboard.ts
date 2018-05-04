@@ -31,6 +31,9 @@ export class LeaderboardPage {
     {username: 'nikesh', progress: 50},
     {username: 'sahana', progress: 75},
     {username: 'narinder', progress: 0},
+    {username: 'devrin', progress: 85},
+    {username: 'sergiu', progress: 60},
+    {username: 's.glove', progress: 100},
   ];
   }
 
