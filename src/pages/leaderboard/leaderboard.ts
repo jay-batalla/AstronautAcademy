@@ -21,7 +21,7 @@ export class LeaderboardPage {
   first_name: string;
   progress: number;
   location: number;
-  users: Array<Object>;
+  users: Array<any>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.first_name = navParams.get("first_name");
@@ -40,11 +40,11 @@ export class LeaderboardPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LeaderboardPage');
 
-    function search( username:string , users:Array<Object> ) : bool
+    function search( username:string ) : bool
   {
-    for( var k = 0; k < users.length; k++ )
+    for( var k = 0; k < this.users.length; k++ )
        {
-        if( users[k].username == username )
+        if( this.users[k].username == username )
         {
           return true;
         }
