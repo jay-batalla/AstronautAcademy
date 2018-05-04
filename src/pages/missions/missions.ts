@@ -9,7 +9,7 @@ import { Missions4Page } from '../missions/missions4';
 import { Missions5Page } from '../missions/missions5';
 
 import { MapPage } from '../map/map';
-import { MapPage2Page } from '../map-page2/map-page2';
+
 
 /**
  * Generated class for the MissionsPage page.
@@ -101,7 +101,7 @@ import { MapPage2Page } from '../map-page2/map-page2';
          }
 
          goMap() {
-            this.navCtrl.push(MapPage2Page);
+            this.navCtrl.push(MapPage);
          }
 
          goToMission2()

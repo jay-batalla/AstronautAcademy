@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {LocateControl } from 'leaflet.locatecontrol';
 import { MissionsPage } from '../missions/missions';
-import { MapPage2Page } from '../map-page2/map-page2';
 
 /**
  * Generated class for the MapPage page.
@@ -23,7 +22,7 @@ export class MapPage {
   }
 
 
-  ionViewWillEnter() {
+  ionViewDidLoad() {
     console.log('ionViewDidLoad MapPage');
     //Change coverageTreeManifest to mobile link when publishing to ios
      var map = L.Wrld.map("map", "f1e83049d9f153920ff635e55992cd9b",{ coverageTreeManifest: "https://webgl-cdn1.wrld3d.com/chunk/indoor_maps/api_requests/EIM-ad6cd210-0145-4881-878e-8f5455693527_2018_03_14_04_14_59/webgl_manifest.bin.gz",
@@ -33,6 +32,7 @@ export class MapPage {
         indoorsEnabled: true,
         tap: true
       });
+
       //set map boundaries so cant scroll away from museum **NOT WORKING**
       //var corner1 = L.latLng(39.22290569999999, -119.50486459999999),
       // corner2 = L.latLng(39.82990569999999, -119.91986459999999),
@@ -54,26 +54,14 @@ export class MapPage {
       color: "blue"
       }).addTo(map);
 
-      L.circle([39.52571027963978, -119.80919503721776], {
-      radius: 1.0,
-      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
-      indoorMapFloorId: 0,
-      color: "blue"
-      }).addTo(map);
 
       L.circle([39.525747943020825, -119.80902788424864], {
       radius: 1.0,
       indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
       indoorMapFloorId: 0,
-      color: "blue"
+      color: "purple"
       }).addTo(map);
 
-      L.circle([39.52581990527052, -119.80906928329938], {
-      radius: 1.0,
-      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
-      indoorMapFloorId: 0,
-      color: "blue"
-      }).addTo(map);
 
       L.circle([39.52620262949059, -119.80869848179105], {
       radius: 1.0,
@@ -86,37 +74,46 @@ export class MapPage {
       radius: 1.0,
       indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
       indoorMapFloorId: 0,
-      color: "red"
+      color: "green"
       }).addTo(map);
 
-      L.circle([39.52616691387283, -119.80858290368029], {
+      L.circle([39.52621643899577, -119.80863609775842], {
       radius: 1.0,
       indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
       indoorMapFloorId: 0,
-      color: "red"
+      color: "yellow",
       }).addTo(map);
-
-      L.circle([39.52616762457792, -119.80864557083389], {
-      radius: 1.0,
-      indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
-      indoorMapFloorId: 0,
-      color: "red",
-      }).addTo(map);
-
-      map.openPopup("Mission 1: Rover Mission!", [39.52624882180367, -119.80857799982343], { color: "red", indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
-      indoorMapFloorId: 0, closeOnClick: false });
 
       //debug for poi points to latLng
       map.on('click', function(e) {
           console.log(e.latlng);
+          
       });
 
       //debug
       function onEnter(event) {
         console.log("Entered indoor map: " + event.indoorMap.getIndoorMapId());
         console.log("Entered indoor map: " + event.indoorMap.getIndoorMapName());
+
+      L.popup({ color: "red", indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0, autoClose: false, closeOnClick: false})
+       .setLatLng([39.52622820825, -119.80863976216011],)
+       .setContent("Missions 1 + 2 + 3 Rover Exhibit!")
+       .addTo(map);
+
+      L.popup({ color: "red", indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0, autoClose: false, closeOnClick: false})
+       .setLatLng([39.52579894877208, -119.80921941842692],)
+       .setContent("Missions 4")
+       .addTo(map);
+
+      L.popup({ color: "red", indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
+      indoorMapFloorId: 0, autoClose: false, closeOnClick: false})
+       .setLatLng([39.52576328653688, -119.80903069170826],)
+       .setContent("Missions 5")
+       .addTo(map);
       }
-        
+
       
 
       function onExit(event) {
@@ -130,6 +127,6 @@ export class MapPage {
 
     goToMissions()
     {
-      this.navCtrl.push(MissionsPage);
+      this.navCtrl.pop();
     }
 }

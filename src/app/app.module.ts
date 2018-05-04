@@ -16,10 +16,6 @@ import { QuizStartPage } from '../pages/quiz-start/quiz-start';
 import { QuizEndPage } from '../pages/quiz-end/quiz-end';
 import { PersonalityPage } from '../pages/personality/personality';
 import { MapPage } from '../pages/map/map';
-import { MapPage2Page } from '../pages/map-page2/map-page2';
-import { MapPage3Page } from '../pages/map-page3/map-page3';
-import { MapPage4Page } from '../pages/map-page4/map-page4';
-import { MapPage5Page } from '../pages/map-page5/map-page5';
 import { DataProvider } from '../providers/data/data';
 import { DataProvider2 } from '../providers/data/data1';
 import { DataProvider3 } from '../providers/data/data2';
@@ -47,10 +43,6 @@ import { ProgressPage } from '../pages/progress/progress';
     QuizEndPage,
     PersonalityPage,
     MapPage,
-    MapPage2Page,
-    MapPage3Page,
-    MapPage4Page,
-    MapPage5Page,
     FlashCardComponent,
     Missions0Page,
     MissionsPage,
@@ -78,10 +70,6 @@ import { ProgressPage } from '../pages/progress/progress';
     QuizEndPage,
     PersonalityPage,
     MapPage,
-    MapPage2Page,
-    MapPage3Page,
-    MapPage4Page,
-    MapPage5Page,
     Missions0Page,
     MissionsPage,
     Missions2Page,

@@ -7,6 +7,7 @@ import { Missions2Page } from '../missions/missions2';
 import { Missions3Page } from '../missions/missions3';
 import { Missions4Page } from '../missions/missions4';
 import { Missions5Page } from '../missions/missions5';
+//import { MapPage } from '../map/map';
 
 
 @Component({
