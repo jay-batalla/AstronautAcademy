@@ -1,20 +1,28 @@
+
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Progress</ion-title>
+    <ion-title>Your Progress</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
-<ion-content padding>
-  <h2> Your Current Progress </h2>
-<progress-bar [progress]="loadProgress"></progress-bar>
+<ion-content padding no-bounce class="no-scroll">
+<!-- <progress-bar [progress]="loadProgress"></progress-bar> -->
 
 
 <ion-list>
 
-	<button ion-button style="text-align: center">Mission One</button>
+	<div class="spacer" style="width: 300px; height: 15px;"></div>
+	<button ion-button full large color="mission1" [strong]="outline1" style="text-align: center">Mission One</button>
+	 <div class="spacer" style="width: 300px; height: 15px;"></div>
+	<button ion-button full large color="mission2" [strong]="outline2" style="text-align: center">Mission Two</button>
+	 <div class="spacer" style="width: 300px; height: 15px;"></div>
+	<button ion-button full large color="mission3" [strong]="outline3" style="text-align: center">Mission Three</button>
+	 <div class="spacer" style="width: 300px; height: 15px;"></div>
+	<button ion-button full large color="mission4" [strong]="outline4" style="text-align: center">Mission Four</button>
+	 <div class="spacer" style="width: 300px; height: 15px;"></div>
+	<button ion-button full large color="mission5" [strong]="outline5" style="text-align: center">Mission Five</button>
 
       <!-- <h1 style="color: white; text-align: center;"> {{one_best}} / 15</h1> -->
 

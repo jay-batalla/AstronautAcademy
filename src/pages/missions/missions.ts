@@ -22,6 +22,7 @@ import { MapPage } from '../map/map';
 
      hasAnswered: boolean = false;
      one_score: number = 0;
+     complete_one: boolean = false;
 
      slideOptions: any;
      questions: any;

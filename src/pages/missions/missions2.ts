@@ -19,6 +19,7 @@ import { MapPage } from '../map/map';
 
      hasAnswered: boolean = false;
      two_score: number = 0;
+     complete_two: boolean = false;
      one_score: number;
 
      slideOptions: any;

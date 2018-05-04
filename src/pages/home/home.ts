@@ -60,11 +60,6 @@ export class HomePage {
   	}, 1000);
 
   }
-    goToMap()
-    {
-      this.navCtrl.push(MapPage);
-    }
-
     goToMissions0()
     {
       this.navCtrl.push(Missions0Page);

@@ -1,18 +1,20 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Mission 5
-    </ion-title>
+    <ion-title>Mission 5</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content>
+
+<ion-content padding no-bounce class="no-scroll">
 
     <ion-slides #slides>
 <!-- mission 5 --> 
         <ion-slide class="start-slide">
           <h2> Outstanding! Now you're ready to begin your FIFTH mission!  </h2>
 
+            <button ion-button color="mission5" (click)="goMap()">STUDY THE MAP</button>
             <button ion-button color="primary" (click)="nextSlide()" class="animate-in-primary">LET'S GO</button>
         </ion-slide>
 

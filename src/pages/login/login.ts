@@ -17,7 +17,7 @@ export class LoginPage {
   email: string;
   password: string;
   username: string;
-  loginUser: string;
+  loginUser: string = '  ';
   loginPass: string;
   //login: any = {};
 

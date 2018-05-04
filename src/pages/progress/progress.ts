@@ -10,6 +10,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProgressPage {
 
+  private buttonColor:string = "primary";
+  private outline:boolean = true;
+
+  complete_one: boolean;
+  complete_two: boolean;
+  complete_three: boolean;
+  complete_four: boolean;
+  complete_five: boolean;
+
   // one_best: number;
   // two_best: number;
   // one_score: number;
@@ -28,6 +37,8 @@ export class ProgressPage {
   //     two_best = two_score;
   //   }
   // }
+
+
 }
   ionViewDidLoad() {
 
@@ -40,5 +51,9 @@ export class ProgressPage {
 
     }, 50);
   }  */
+}
+
+someAction() {
+  this.buttonColor = "light";
 }
 }
