@@ -18,6 +18,9 @@ import { PersonalityPage } from '../pages/personality/personality';
 import { MapPage } from '../pages/map/map';
 import { DataProvider } from '../providers/data/data';
 import { DataProvider2 } from '../providers/data/data1';
+import { DataProvider3 } from '../providers/data/data2';
+import { DataProvider4 } from '../providers/data/data3';
+import { DataProvider5 } from '../providers/data/data4';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { MissionsPage } from '../pages/missions/missions';
 import { Missions2Page } from '../pages/missions/missions2';
@@ -69,6 +72,7 @@ import { ProgressPage } from '../pages/progress/progress';
     Missions2Page,
     Missions3Page,
     Missions4Page,
+    Missions5Page,
     LeaderboardPage,
     ProgressPage
   ],
@@ -78,6 +82,9 @@ import { ProgressPage } from '../pages/progress/progress';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DataProvider,
     DataProvider2,
+    DataProvider3,
+    DataProvider4,
+    DataProvider5,
     LoginDataProvider
   ]
 })

@@ -1,0 +1,145 @@
+{
+    "questions": [
+
+        {
+
+            "flashCardFront": "What animal was flown to the Moon and back on the Apollo 17 Mission?",
+            "flashCardBack": "Five Pocket Mice",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Operations Room",
+            "answers": [
+                {"answer": "Five Pocket Mice", "correct": true, "selected": false},
+                {"answer": "Three Rabbits", "correct": false, "selected": false},
+                {"answer": "Two Pocket Mice", "correct": false, "selected": false},
+                {"answer": "Four Rabbits", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "One of the first objects that were 3D-Printed on the ISS was known as what?",
+            "flashCardBack": "“Honey Pot”",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Operations Room",
+            "answers": [
+                {"answer": "“Honey Seed”", "correct": false, "selected": false},
+                {"answer": "“Honey Pot”", "correct": true, "selected": false},
+                {"answer": "“Pot Seed”", "correct": false, "selected": false},
+                {"answer": "“Space Pot”", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "Which of the following was never intended to land on the Moon and is still in orbit around the Sun today?",
+            "flashCardBack": "Apollo 10 Lunar Module",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Operations Room",
+            "answers": [
+                {"answer": "Apollo 13", "correct": false, "selected": false},
+                {"answer": "Apollo 14", "correct": false, "selected": false},
+                {"answer": "Apollo 10 Lunar Module", "correct": true, "selected": false},
+                {"answer": " Apollo 11 Command Module", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "In the Rover Operations Room, what are the 3 necessary steps (in order)  needed to BE THE ASTRONAUT?",
+            "flashCardBack": "Plan your Mission, Explore Science and Technology, Take Flight",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Operations Room",
+            "answers": [
+                {"answer": "Plan your Mission, Explore Science and Technology, Take Flight", "correct": false, "selected": false},
+                {"answer": "Explore Science and Technology, Take Flight, Plan your Mission", "correct": true, "selected": false},
+                {"answer": "Take Flight, Plan your Mission, Explore Science and Technology", "correct": false, "selected": false},
+                {"answer": "Plan your Mission, Take Flight, Explore Science and Technology ", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "NASA's “Silver Snoopy” was adapted from what?",
+            "flashCardBack": "Snoopy, Charles M. Schulz’s classic comic strip character",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control ",
+            "answers": [
+                {"answer": "Charlie Brown, Charles M. Schulz’s classic comic strip character", "correct": false, "selected": false},
+                {"answer": "Snoopy, Charles M. Schulz’s classic comic strip character", "correct": false, "selected": false},
+                {"answer": "Woodstock, Charles M. Schulz’s classic comic strip character", "correct": false, "selected": false},
+                {"answer": "Sally Brown, Charles M. Schulz’s classic comic strip character", "correct": true, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "The “Silver Snoopy” which was selected to be NASA’s official safety watchdog is awarded by NASA for what?",
+            "flashCardBack": "In recognition of contributions to safety",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mars Exhibit",
+            "answers": [
+                {"answer": "Keeping Astronauts safe in space", "correct": true, "selected": false},
+                {"answer": "Bringing Astronauts back to Earth", "correct": false, "selected": false},
+                {"answer": "In recognition of contributions to safety", "correct": false, "selected": false},
+                {"answer": "Allowing Astronauts to explore space", "correct": false, "selected": false}
+
+            ]
+        },
+
+
+        {
+            "flashCardFront": "What are the 3 (abbreviated) stages for BE THE ASTRONAUT in the Rover Operations Room?",
+            "flashCardBack": "1. NAV, 2. SCI, 3. FLY",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "1. NAV, 2. FLY, 3.SCI", "correct": false, "selected": false},
+                {"answer": "1. SCI, 2. NAV, 3. FLY", "correct": false, "selected": false},
+                {"answer": "1. NAV, 2. SCI, 3. FLY", "correct": true, "selected": false},
+                {"answer": "1. FLY, 2. SCI, 3. NAV", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "How long would a distance from Earth to Mars and back be?",
+            "flashCardBack": "About 70,000,000 Miles",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "About 70,000,000 Miles", "correct": true, "selected": false},
+                {"answer": "About 150,000,000 Miles", "correct": false, "selected": false},
+                {"answer": "About 10,000,000 Miles", "correct": false, "selected": false},
+                {"answer": "About 1,000,000 Miles", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "What does the word “astronaut” translate to?",
+            "flashCardBack": "Star Sailor",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Space Engineer", "correct": false, "selected": false},
+                {"answer": "Aeronautical Engineer", "correct": false, "selected": false},
+                {"answer": "Star Philosopher", "correct": true, "selected": false},
+                {"answer": "Star Sailor", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+              "flashCardFront": "How many Moons does Mars have?",
+              "flashCardBack": "2",
+              "flashCardFlipped": false,
+              "questionText": "Location: Mission Control",
+              "answers": [
+                  {"answer": "1", "correct": false, "selected": false},
+                  {"answer": "3", "correct": true, "selected": false},
+                  {"answer": "2", "correct": false, "selected": false},
+                  {"answer": "5", "correct": false, "selected": false}
+
+              ]
+        }
+
+    ]
+}

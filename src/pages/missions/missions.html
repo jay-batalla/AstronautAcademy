@@ -14,6 +14,13 @@
           <h2> You're ready to begin your first mission! You must correctly answer each trivia question in order to unlock your next mission. Keep a sharp eye out for CLUES and ANSWERS to all trivia questions. They can be found at the ROVER EXHIBIT in the ROVER OPERATIONS ROOM. Refer to the map if you need help. Good Luck!  </h2>
 
             <button ion-button color="primary" (click)="nextSlide()">LET'S GO</button>
+            <button (click)="goToMission2()" ion-button full color="primary">MISSION 2 TEST</button>
+            <button (click)="goToMissions3()" ion-button full color="primary">MISSION 3 TEST</button>
+            <button (click)="goToMissions4()" ion-button full color="primary">MISSION 4 TEST</button>
+            <button (click)="goToMissions5()" ion-button full color="primary">MISSION 5 TEST</button>
+
+
+
         </ion-slide>
 
         <ion-slide *ngFor="let question of questions; let i = index;">
@@ -48,6 +55,7 @@
             <button (click)="restartQuiz()" ion-button full color="primary">Play Again?</button>
             <button (click)="goMap()" ion-button full color="primary">NEXT MISSION</button>
             <button (click)="goHome()" ion-button full color="primary">BACK TO HOME</button>
+
 
         </ion-slide>
 
