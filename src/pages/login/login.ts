@@ -22,7 +22,7 @@ export class LoginPage {
   //login: any = {};
 
   constructor(public navParams: NavParams, public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController, public loginService: LoginDataProvider) {
-  	this.role = this.initial_role = navParams.get("role");
+  	this.role = navParams.get("role");
     this.first_name = navParams.get("first_name");
     this.last_name = navParams.get("last_name");
     this.email = navParams.get("email");
@@ -103,7 +103,7 @@ export class LoginPage {
             {
               this.role = 'Navigator';
               this.first_name = "Nikesh";
-              this.first_name = 'nikesh';
+              this.username = 'nikesh';
               return true;
             }
           return false;

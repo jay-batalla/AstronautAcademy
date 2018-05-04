@@ -20,17 +20,18 @@ export class LeaderboardPage {
   username: string;
   first_name: string;
   progress: number;
-  location: number
-  users: Array<Object> = [
+  location: number;
+  users: Array<Object>;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.first_name = navParams.get("first_name");
+    this.username = navParams.get("username");
+    this.users = [
     {username: 'jay', progress: 35},
     {username: 'nikesh', progress: 50},
     {username: 'sahana', progress: 75},
     {username: 'narinder', progress: 25},
   ];
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.first_name = navParams.get("first_name");
-    this.username = navParams.get("username");
   }
 
   ionViewDidLoad() {
@@ -39,10 +40,21 @@ export class LeaderboardPage {
 
     console.log(this.users);
 
-    for( let user in this.users )
+    function compare(a,b) {
+    if (a.progress < b.progress)
+      return 1;
+    if (a.progress > b.progress)
+      return -1;
+    return 0;
+  }
+
+    this.users.sort(compare);
+
+    for( var i = 0; i < this.users.length; i++ )
      {
-      if( this.username == user.username )
-        console.log(user.username);
+      if( this.username == this.users[i].username ) {
+        this.location = i + 1;
+      }
      }
 
     //  this.itemRef.orderByChild("total_points").on('value',(itemSnapshot) =>{
