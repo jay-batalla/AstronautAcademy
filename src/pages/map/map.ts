@@ -41,7 +41,6 @@ export class MapPage {
 
       //map = L.map('map', {doubleClickZoom: false}).locate({setView: true, maxZoom: 16, tap: true, watch: true, enableHighAccuracy: true, fitBounds: [39.52590569999999, -119.80886459999999]});
 
-      L.marker([39.52590369999999, -119.80865459999999], {indoorMapId:"EIM-ad6cd210-0145-4881-878e-8f5455693527", indoorMapFloorId: 0  }).addTo(map);
 
       //touch me popup to go indoors
       map.openPopup("Touch Me!", [39.52590569999999, -119.80886459999999], { elevation: 10.0 });
@@ -98,19 +97,19 @@ export class MapPage {
       L.popup({ color: "red", indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
       indoorMapFloorId: 0, autoClose: false, closeOnClick: false})
        .setLatLng([39.52622820825, -119.80863976216011],)
-       .setContent("Missions 1 + 2 + 3 Rover Exhibit!")
+       .setContent("Missions 1 + 2 + 3")
        .addTo(map);
 
       L.popup({ color: "red", indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
       indoorMapFloorId: 0, autoClose: false, closeOnClick: false})
        .setLatLng([39.52579894877208, -119.80921941842692],)
-       .setContent("Missions 4")
+       .setContent("Mission 4")
        .addTo(map);
 
       L.popup({ color: "red", indoorMapId: "EIM-ad6cd210-0145-4881-878e-8f5455693527",
       indoorMapFloorId: 0, autoClose: false, closeOnClick: false})
        .setLatLng([39.52576328653688, -119.80903069170826],)
-       .setContent("Missions 5")
+       .setContent("Mission 5")
        .addTo(map);
       }
 
