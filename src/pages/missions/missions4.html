@@ -13,7 +13,7 @@
         <ion-slide class="start-slide">
           <h2> Outstanding! Now you're ready to begin your FOURTH mission!  </h2>
 
-            <button ion-button color="primary" (click)="nextSlide()">LET'S GO</button>
+            <button ion-button color="primary" (click)="nextSlide()"class="animate-in-primary">LET'S GO</button>
         </ion-slide>
 
         <ion-slide *ngFor="let question of questions; let i = index;">
@@ -45,7 +45,7 @@
         </ion-slide>
 
         <ion-slide>
-            <h2>Outstanding Effort, cadet! You have successfully completed your missions! Your Final Score is {{score}} out of 10</h2>
+            <h2> Impressive, cadet! You have successfully completed your mission! Your Final Score is {{score}} out of 10</h2>
 
             <button (click)="restartQuiz()" ion-button full color="primary">Try Again?</button>
             <button (click)="goToHome()" ion-button full color="primary">BACK TO HOME</button>

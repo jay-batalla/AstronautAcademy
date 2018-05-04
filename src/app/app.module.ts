@@ -22,6 +22,7 @@ import { DataProvider3 } from '../providers/data/data2';
 import { DataProvider4 } from '../providers/data/data3';
 import { DataProvider5 } from '../providers/data/data4';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { Missions0Page } from '../pages/missions/missions0';
 import { MissionsPage } from '../pages/missions/missions';
 import { Missions2Page } from '../pages/missions/missions2';
 import { Missions3Page } from '../pages/missions/missions3';
@@ -43,6 +44,7 @@ import { ProgressPage } from '../pages/progress/progress';
     PersonalityPage,
     MapPage,
     FlashCardComponent,
+    Missions0Page,
     MissionsPage,
     Missions2Page,
     Missions3Page,
@@ -68,6 +70,7 @@ import { ProgressPage } from '../pages/progress/progress';
     QuizEndPage,
     PersonalityPage,
     MapPage,
+    Missions0Page,
     MissionsPage,
     Missions2Page,
     Missions3Page,

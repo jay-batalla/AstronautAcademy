@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Missions</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding no-bounce class="no-scroll">
+
+    <ion-slides #slides>
+
+        <ion-slide class="start-slide">
+          <h2> You must correctly answer each trivia question in order to complete each mission. Clues & Answers can be found at various museum exhbits and galleries. </h2>
+
+            <button ion-button full color="primary" (click)="goToMissions()" class="animate-in-primary">MISSION 1</button>
+            <button (click)="goToMissions2()" ion-button full color="primary" class="animate-in-primary">MISSION 2</button>
+            <button (click)="goToMissions3()" ion-button full color="primary" class="animate-in-primary">MISSION 3</button>
+            <button (click)="goToMissions4()" ion-button full color="primary" class="animate-in-primary">MISSION 4</button>
+            <button (click)="goToMissions5()" ion-button full color="primary" class="animate-in-primary">MISSION 5</button>
+      </ion-slide>
+    </ion-slides>
+</ion-content>
