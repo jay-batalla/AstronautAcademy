@@ -4,6 +4,9 @@ import { DataProvider } from '../../providers/data/data';
 import { HomePage } from '../home/home';
 import { FlashCardComponent } from '../../components/flash-card/flash-card';
 import { Missions2Page } from '../missions/missions2';
+import { Missions3Page } from '../missions/missions3';
+import { Missions4Page } from '../missions/missions4';
+import { Missions5Page } from '../missions/missions5';
 
 import { MapPage } from '../map/map';
 import { MapPage2Page } from '../map-page2/map-page2';
@@ -115,5 +118,20 @@ import { MapPage2Page } from '../map-page2/map-page2';
             this.navCtrl.setRoot(HomePage, {
                 one_score: this.one_score
             });
+         }
+
+         goToMissions3()
+         {
+           this.navCtrl.push(Missions3Page);
+         }
+
+         goToMissions4()
+         {
+           this.navCtrl.push(Missions4Page);
+         }
+
+         goToMissions5()
+         {
+           this.navCtrl.push(Missions5Page);
          }
      }

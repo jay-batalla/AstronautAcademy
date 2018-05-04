@@ -4,7 +4,7 @@ import { HomePage } from '../home/home';
 import { FlashCardComponent } from '../../components/flash-card/flash-card';
 import { MissionsPage } from '../missions/missions';
 import { Missions4Page } from '../missions/missions4';
-import { DataProvider2 } from '../../providers/data/data1';
+import { DataProvider3 } from '../../providers/data/data2';
 
 import { MapPage } from '../map/map';
 
@@ -22,7 +22,7 @@ import { MapPage } from '../map/map';
      slideOptions: any;
      questions: any;
 
-    constructor(public navCtrl: NavController, public dataService: DataProvider2) {
+    constructor(public navCtrl: NavController, public dataService: DataProvider3) {
 
     }
 

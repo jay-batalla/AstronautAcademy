@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { FlashCardComponent } from '../../components/flash-card/flash-card';
 import { MissionsPage } from '../missions/missions';
-import { DataProvider2 } from '../../providers/data/data1';
+import { DataProvider5 } from '../../providers/data/data4';
 
 import { MapPage } from '../map/map';
 
@@ -21,7 +21,7 @@ import { MapPage } from '../map/map';
      slideOptions: any;
      questions: any;
 
-    constructor(public navCtrl: NavController, public dataService: DataProvider2) {
+    constructor(public navCtrl: NavController, public dataService: DataProvider5) {
 
     }
 
