@@ -4,6 +4,7 @@ import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { MapPage } from '../map/map';
 import { MissionsPage } from '../missions/missions';
+import { Missions0Page } from '../missions/missions0';
 import { LeaderboardPage } from '../leaderboard/leaderboard';
 import { ProgressPage } from '../progress/progress';
 
@@ -48,9 +49,9 @@ export class HomePage {
       this.navCtrl.push(MapPage);
     }
 
-    goToMissions()
+    goToMissions0()
     {
-      this.navCtrl.push(MissionsPage);
+      this.navCtrl.push(Missions0Page);
     }
 
     goToLeaderboard()

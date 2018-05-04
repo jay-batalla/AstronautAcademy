@@ -13,7 +13,7 @@
         <ion-slide class="start-slide">
           <h2> Stellar! Now you're ready to begin your SECOND mission! You must correctly answer each trivia question. Keep a sharp eye out for CLUES and ANSWERS to all trivia questions. They can be found at the MARS EXHIBIT in the MISSION CONTROL ROOM. Refer to the map if you need help. Good Luck, cadet!  </h2>
 
-            <button ion-button color="primary" (click)="nextSlide()">LET'S GO</button>
+            <button ion-button color="primary" (click)="nextSlide()" class="animate-in-primary">LET'S GO</button>
         </ion-slide>
 
         <ion-slide *ngFor="let question of questions; let i = index;">
