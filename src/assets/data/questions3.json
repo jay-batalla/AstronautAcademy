@@ -1,0 +1,145 @@
+{
+    "questions": [
+
+        {
+            "flashCardFront": "What is one key component that all rovers must have?",
+            "flashCardBack": "Must be able to move over the surface of a Planet",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Must be small", "correct": false, "selected": false},
+                {"answer": "Must be able to move over the surface of a Planet", "correct": true, "selected": false},
+                {"answer": "Must be able to go into orbit", "correct": false, "selected": false},
+                {"answer": "Must be fast", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "In terms of NASA, what does EVA stand for?",
+            "flashCardBack": "Extra Vehicular Activity",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Emergency Vehicle Access", "correct": false, "selected": false},
+                {"answer": "Extra Vehicular Activity", "correct": false, "selected": false},
+                {"answer": "Ethyl Vinyl Acetate", "correct": true, "selected": false},
+                {"answer": "Enterprise Virtual Array", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "What is problematic of lunar dust entering the rover crew compartment?",
+            "flashCardBack": "Harmful, bad to breathe",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Harmful, bad to breathe", "correct": false, "selected": false},
+                {"answer": "Bacteria in dust", "correct": true, "selected": false},
+                {"answer": "Rotten odors", "correct": false, "selected": false},
+                {"answer": "Limited visibility", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "What was the name of the Soviet Union's Lunar Rovers?",
+            "flashCardBack": "Lunokhod 1 and 2",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Explorer and Propeller", "correct": false, "selected": false},
+                {"answer": "Sojourner and Curiosity", "correct": false, "selected": false},
+                {"answer": "Lunokhod 1 and 2", "correct": false, "selected": false},
+                {"answer": "Sojourner 1 and 2", "correct": true, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "What were the Lunokhod 1 and 2 Lunar Rovers by during the day?",
+            "flashCardBack": "Solar Power",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Thermal Power", "correct": true, "selected": false},
+                {"answer": "Solar Power", "correct": false, "selected": false},
+                {"answer": "Nuclear Power", "correct": false, "selected": false},
+                {"answer": "Wind Power", "correct": false, "selected": false}
+
+            ]
+        },
+
+
+        {
+            "flashCardFront": "What were the Lunokhod 1 and 2 Lunar Rovers powered by during the night?",
+            "flashCardBack": "Thermal Energy from Polonium-210 radioisotope heater",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Solar Engery from Polonium-210 radioisotope heater", "correct": false, "selected": false},
+                {"answer": "Wind Energy", "correct": false, "selected": false},
+                {"answer": "Thermal Energy from Polonium-210 radioisotope heater", "correct": true, "selected": false},
+                {"answer": "Nuclear Energy", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Why did the Lunokhod 1 & 2 rely on thermal energy from a radioisotopic heater?",
+            "flashCardBack": "To survive the cold at night",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "To survive the cold at night", "correct": true, "selected": false},
+                {"answer": "To constantly recieve power", "correct": false, "selected": false},
+                {"answer": "To make sure the rover didn't freeze over", "correct": false, "selected": false},
+                {"answer": "To charge the rover", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "The Sojourner was powered by what?",
+            "flashCardBack": "Solar Power",
+            "flashCardFlipped": false,
+            "questionText": "Location: Rover Exhibit",
+            "answers": [
+                {"answer": "Wind Power", "correct": false, "selected": false},
+                {"answer": "Solar Power", "correct": false, "selected": false},
+                {"answer": "Nuclear Power", "correct": true, "selected": false},
+                {"answer": "Geothermal Power", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+              "flashCardFront": "Why are Suitports important?",
+              "flashCardBack": "They allow the crew to enter into their suits and exit the vehicle at the same time decreasing the amount of air that is lost",
+              "flashCardFlipped": false,
+              "questionText": "Location: Rover Exhibit",
+              "answers": [
+                  {"answer": "They allow the crew to enter into their suits and exit the vehicle at the same time decreasing the amount of air that is lost", "correct": false, "selected": false},
+                  {"answer": "They allow the crew to enter an area where they are able to sleep", "correct": true, "selected": false},
+                  {"answer": "They allow Astronauts to store all their belongings safely", "correct": false, "selected": false},
+                  {"answer": "They safely store Astroanuts space suits in a designated area", "correct": false, "selected": false}
+
+              ]
+        },
+
+        {
+              "flashCardFront": " What is meant by the term MODULAR in a Rover design?",
+              "flashCardBack": "Re-use of structure with different components and variants",
+              "flashCardFlipped": false,
+              "questionText": "Location: Rover Exhibit",
+              "answers": [
+                  {"answer": "Fixed structure with many similiar components", "correct": false, "selected": false},
+                  {"answer": "Un-reusable structure with different components and variants", "correct": false, "selected": false},
+                  {"answer": "Inflexible structure with many similiar components", "correct": false, "selected": false},
+                  {"answer": "Re-use of structure with differnt components and variants", "correct": true, "selected": false}
+
+              ]
+        }
+
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "questions": [
+
+        {
+
+            "flashCardFront": "What is another term for Martian days?",
+            "flashCardBack": "Sols",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Sols", "correct": true, "selected": false},
+                {"answer": "Dias", "correct": false, "selected": false},
+                {"answer": "Journees", "correct": false, "selected": false},
+                {"answer": "Cronos", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "What was the name of the first Mars Rover?",
+            "flashCardBack": "Sojourner",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Propeller", "correct": false, "selected": false},
+                {"answer": "Sojourner", "correct": true, "selected": false},
+                {"answer": "Lunar ", "correct": false, "selected": false},
+                {"answer": "Traveller", "correct": false, "selected": false}
+
+            ]
+        },
+        {
+            "flashCardFront": "How many Sols did the Mars Pathfinder Mission last?",
+            "flashCardBack": "90 Sols",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "5 Sols", "correct": false, "selected": false},
+                {"answer": "200 Sols", "correct": false, "selected": false},
+                {"answer": "10 Sols", "correct": true, "selected": false},
+                {"answer": "90 Sols", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "What is the location of Mars in relation to the Sun?",
+            "flashCardBack": "4th Planet",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "4th Planet", "correct": false, "selected": false},
+                {"answer": "5th Planet", "correct": true, "selected": false},
+                {"answer": "2nd Planet", "correct": false, "selected": false},
+                {"answer": "3rd Planet", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "What is another name for Mars?",
+            "flashCardBack": "Red Planet",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Fire Planet", "correct": false, "selected": false},
+                {"answer": "Red Planet", "correct": false, "selected": false},
+                {"answer": "Hot Planet", "correct": false, "selected": false},
+                {"answer": "Black Planet", "correct": true, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "If an Astronaut weighs 150 lbs. on Earth how much would he or she weight on Mars?",
+            "flashCardBack": "57 lbs",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "57 lbs", "correct": true, "selected": false},
+                {"answer": "25 lbs", "correct": false, "selected": false},
+                {"answer": "100 lbs", "correct": false, "selected": false},
+                {"answer": "77 lbs", "correct": false, "selected": false}
+
+            ]
+        },
+
+
+        {
+            "flashCardFront": "What are the names of the Moons on Mars?",
+            "flashCardBack": "Phobos and Deimos",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Phobos and Cronos", "correct": false, "selected": false},
+                {"answer": "Olympus and Zeus", "correct": false, "selected": false},
+                {"answer": "Cronos and Olympus", "correct": true, "selected": false},
+                {"answer": "Phobos and Deimos", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "Mars is similar to Earth in what sense?",
+            "flashCardBack": "The Martian day, seasonal cycles, and the tilt that produces the seasons",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "The Martian day, seasonal cycles, and the tilt that produces the seasons", "correct": true, "selected": false},
+                {"answer": "The moons and seasonal cycles", "correct": false, "selected": false},
+                {"answer": "Thin atmosphere", "correct": false, "selected": false},
+                {"answer": "Amount of atmospheric pressure", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+            "flashCardFront": "What is Olympus Mons?",
+            "flashCardBack": "Largest volcano and second-highest mountain yet discovered in the solar system",
+            "flashCardFlipped": false,
+            "questionText": "Location: Mission Control",
+            "answers": [
+                {"answer": "Largest volcano and second-highest mountain yet discovered in the solar system", "correct": false, "selected": false},
+                {"answer": "Smallest mountain yet discovered in the solar system", "correct": false, "selected": false},
+                {"answer": "Mar’s Moon", "correct": true, "selected": false},
+                {"answer": "Highest mountain and second-largest volcano yet discovered in the solar system", "correct": false, "selected": false}
+
+            ]
+        },
+
+        {
+              "flashCardFront": "How many Moons does Mars have?",
+              "flashCardBack": "2",
+              "flashCardFlipped": false,
+              "questionText": "Location: Mission Control",
+              "answers": [
+                  {"answer": "1", "correct": false, "selected": false},
+                  {"answer": "3", "correct": true, "selected": false},
+                  {"answer": "2", "correct": false, "selected": false},
+                  {"answer": "5", "correct": false, "selected": false}
+
+              ]
+        }
+
+    ]
+}
