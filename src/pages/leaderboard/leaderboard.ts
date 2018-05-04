@@ -40,17 +40,24 @@ export class LeaderboardPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LeaderboardPage');
 
-    for( var i = 0; i < this.users.length; i++ )
-     {
-      if( this.username == this.users[i].username ) {
+    function search( username:string , users:Array<Object> ) : bool
+  {
+    for( var k = 0; k < users.length; k++ )
+       {
+        if( users[k].username == username )
+        {
+          return true;
+        }
+       }
+  }
+
+      if( search(this.username, this.users) ) {
         //do nothing
       }
       else //if the username doesn't appear, add it to array
          {
           this.users.push({username: this.username, progress: 20});
-          break;
          }
-     }
 
     console.log(this.users);
 
@@ -88,5 +95,6 @@ export class LeaderboardPage {
     //   return this.items;
     // });
   }
+
 }
 
