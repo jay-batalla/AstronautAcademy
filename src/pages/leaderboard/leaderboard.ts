@@ -40,7 +40,7 @@ export class LeaderboardPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LeaderboardPage');
 
-    function search( username:string ) : bool
+    function search( username:string ) : boolean
   {
     for( var k = 0; k < this.users.length; k++ )
        {
