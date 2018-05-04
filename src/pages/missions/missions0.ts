@@ -9,7 +9,7 @@ import { Missions4Page } from '../missions/missions4';
 import { Missions5Page } from '../missions/missions5';
 //import { MapPage } from '../map/map';
 
-
+// mission selection page 
 @Component({
   selector: 'page-missions',
   templateUrl: 'missions0.html'
