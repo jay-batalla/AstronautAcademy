@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {LocateControl } from 'leaflet.locatecontrol';
 import { MissionsPage } from '../missions/missions';
-import { MapPage2Page } from '../map-page2/map-page2';
 
 /**
  * Generated class for the MapPage page.
@@ -14,16 +13,16 @@ import { MapPage2Page } from '../map-page2/map-page2';
 
 @IonicPage()
 @Component({
-  selector: 'page-map',
-  templateUrl: 'map.html', 
+  selector: 'page-map-page2',
+  templateUrl: 'map-page2.html',
 })
-export class MapPage {
+export class MapPage2Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
 
-  ionViewWillEnter() {
+  ionViewdidload() {
     console.log('ionViewDidLoad MapPage');
     //Change coverageTreeManifest to mobile link when publishing to ios
      var map = L.Wrld.map("map", "f1e83049d9f153920ff635e55992cd9b",{ coverageTreeManifest: "https://webgl-cdn1.wrld3d.com/chunk/indoor_maps/api_requests/EIM-ad6cd210-0145-4881-878e-8f5455693527_2018_03_14_04_14_59/webgl_manifest.bin.gz",
@@ -115,9 +114,8 @@ export class MapPage {
       function onEnter(event) {
         console.log("Entered indoor map: " + event.indoorMap.getIndoorMapId());
         console.log("Entered indoor map: " + event.indoorMap.getIndoorMapName());
+
       }
-        
-      
 
       function onExit(event) {
           console.log("Exited indoor map");
@@ -128,8 +126,4 @@ export class MapPage {
 
   }
 
-    goToMissions()
-    {
-      this.navCtrl.push(MissionsPage);
-    }
 }

@@ -6,6 +6,7 @@ import { FlashCardComponent } from '../../components/flash-card/flash-card';
 import { Missions2Page } from '../missions/missions2';
 
 import { MapPage } from '../map/map';
+import { MapPage2Page } from '../map-page2/map-page2';
 
 /**
  * Generated class for the MissionsPage page.
@@ -97,7 +98,7 @@ import { MapPage } from '../map/map';
          }
 
          goMap() {
-            this.navCtrl.push(MapPage);
+            this.navCtrl.push(MapPage2Page);
          }
 
          goToMission2()
