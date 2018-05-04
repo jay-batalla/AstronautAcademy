@@ -51,7 +51,7 @@ export class LeaderboardPage {
        }
   }
 
-      if( search(this.username, this.users) ) {
+      if( search(this.username) ) {
         //do nothing
       }
       else //if the username doesn't appear, add it to array
