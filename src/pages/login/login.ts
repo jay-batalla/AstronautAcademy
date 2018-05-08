@@ -5,12 +5,17 @@ import { HomePage } from '../home/home';
 import { SignupPage } from '../signup/signup';
 import { LoginDataProvider } from '../../providers/login-data/login-data';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'
 })
 export class LoginPage {
+
+  loginForm: FormGroup;
+  loginError: string;
 
   role: string;
   first_name: string;
@@ -22,19 +27,43 @@ export class LoginPage {
   loginPass: string;
   //login: any = {};
 
-  constructor(public navParams: NavParams, public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController, public loginService: LoginDataProvider, public db: AngularFireDatabase) {
+  constructor(public navParams: NavParams, public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController, public loginService: LoginDataProvider, public db: AngularFireDatabase, private auth: AuthService,
+fb: FormBuilder) {
   	this.role = navParams.get("role");
     this.first_name = navParams.get("first_name");
     this.last_name = navParams.get("last_name");
     this.email = navParams.get("email");
     this.password = navParams.get("password");
     this.username = navParams.get("username");
+
+    this.loginForm = fb.group({
+      email: ['', Validators.compose([Validators.required, Validators.email])],
+      password: ['', Validators.compose([Validators.required, Validators.minLength(6)])]
+});    
   } 
 
   ionViewDidLoad(){
     //this.loginService.getRemoteData();
     // this.loginService.sendLogin( this.login );
   }
+
+  login() {
+    let data = this.loginForm.value;
+
+    if (!data.email) {
+      return;
+    }
+
+    let credentials = {
+      email: data.email,
+      password: data.password
+    };
+    this.auth.signInWithEmail(credentials)
+      .then(
+        () => this.navCtrl.setRoot(HomePage),
+        error => this.loginError = error.message
+      );
+}
 
   loginAlert(){
   	let alert = this.alertCtrl.create({
