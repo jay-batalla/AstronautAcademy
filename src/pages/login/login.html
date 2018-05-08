@@ -6,7 +6,7 @@
 
   <div class="spacer" style="width: 300px; height: 25px;"></div>
 
-<form (ngSubmit)="login()" [formGroup]="loginForm">
+<form (ngSubmit)="signInLoad()" [formGroup]="loginForm">
 
   <ion-list>
 
@@ -27,8 +27,9 @@
 
 <div class="spacer" style="width: 300px; height: 115px;"></div>
 
+
+</form>
   <p style="color: white; text-align: center;">Don't Have an Account?</p>
 
 <button ion-button large full (click)="gosignUp()">Create An Account</button>
-</form>
 </ion-content>

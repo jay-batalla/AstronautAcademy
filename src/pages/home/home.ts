@@ -7,6 +7,8 @@ import { MissionsPage } from '../missions/missions';
 import { Missions0Page } from '../missions/missions0';
 import { LeaderboardPage } from '../leaderboard/leaderboard';
 import { ProgressPage } from '../progress/progress';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { AuthService } from '../../services/auth.service';
 
 // home page
 @Component({
@@ -25,7 +27,9 @@ export class HomePage {
   one_score: number;
   two_score: number;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private loadingCtrl: LoadingController) {
+  user: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private loadingCtrl: LoadingController, public db: AngularFireDatabase, private auth: AuthService,) {
   	this.first_name = navParams.get("first_name");
     this.last_name = navParams.get("last_name");
     this.email = navParams.get("email");
@@ -34,8 +38,14 @@ export class HomePage {
   	this.role = navParams.get("role");
     this.one_score = navParams.get("one_score");
     this.two_score = navParams.get("two_score");
+
   }
 
+
+  ionViewDidLoad(){
+   //tried to connect to database to get email
+   //this.first_name = this.db.auth.currentUser().email;
+}
 
   signOutLoad() {
   	let loading = this.loadingCtrl.create({

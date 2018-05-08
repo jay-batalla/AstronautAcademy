@@ -14,7 +14,7 @@ import { AuthService } from '../../services/auth.service';
 export class SignupPage {
 
 SignupForm: FormGroup;
-//signupError: string;
+signupError: string;
 
   first_name: string;
   last_name: string;
@@ -43,17 +43,20 @@ signup() {
 		let data = this.SignupForm.value;
 		let credentials = {
 			email: data.email,
-			password: data.password,
-      first_name: data.first_name,
-      last_name: data.last_name
+			password: data.password
 		};
 		this.auth.signUp(credentials).then(
-			() => this.navCtrl.setRoot(QuizStartPage),
-			//error => this.signupError = error.message
+			() => this.navCtrl.setRoot(QuizStartPage, {
+        first_name: data.first_name,
+        last_name: data.last_name,
+        email: data.email,
+        password: data.password
+      }),
+			error => this.signupError = error.message
 		);
 }
 
-
+  writeUserData()
 
   signUpLoad() {
     let loading = this.loadingCtrl.create({
