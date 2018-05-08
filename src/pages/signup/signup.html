@@ -11,35 +11,38 @@
 
   <h1 style="text-align: center; color: white; font-size: 56px"> Create your account </h1> 	
 
+<form (ngSubmit)="signup()" [formGroup]="SignupForm">
   <ion-list>
 
   <ion-item>
   <ion-label fixed>First Name</ion-label>
-  <ion-input [(ngModel)]="first_name" type="first_name"></ion-input>
+  <ion-input type="text" placeholder="First Name" formControlName="first_name"></ion-input>
   </ion-item>
 
   <ion-item>
   <ion-label fixed>Last Name</ion-label>
-  <ion-input [(ngModel)]="last_name" type="last_name"></ion-input>
-  </ion-item>
-
-  <ion-item>
-  <ion-label fixed>Username</ion-label>
-  <ion-input [(ngModel)]="username" type="first_name"></ion-input>
+  <ion-input type="text" placeholder="Last Name" formControlName="last_name"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label fixed>Email</ion-label>
-    <ion-input [(ngModel)]="email" type="email" value={{email}}></ion-input>
+    <ion-input type="text" placeholder="Email" formControlName="email"></ion-input>
   </ion-item>
+
+
+
 
   <ion-item>
     <ion-label fixed>Password</ion-label>
-    <ion-input [(ngModel)]="password" type="password" value={{password}}></ion-input>
+    <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
   </ion-item>
+
+
 
 </ion-list>
 
-<button ion-button large full (click)="signUpLoad()">Sign Up</button>
+<button ion-button large full type="submit" [disabled]="!SignupForm.valid">Sign up</button>
+
+  </form>
 
 </ion-content>

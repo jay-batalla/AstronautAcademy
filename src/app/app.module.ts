@@ -12,6 +12,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthService } from '../services/auth.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
