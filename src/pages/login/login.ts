@@ -84,7 +84,7 @@ fb: FormBuilder) {
   	loading.present();
 
   	setTimeout(() => {
-  		login();
+  		this.login();
   	}, 2000);
 
   	setTimeout (() => {
