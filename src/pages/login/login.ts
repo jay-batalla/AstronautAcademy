@@ -4,6 +4,7 @@ import { NavController, AlertController, LoadingController, NavParams } from 'io
 import { HomePage } from '../home/home';
 import { SignupPage } from '../signup/signup';
 import { LoginDataProvider } from '../../providers/login-data/login-data';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'page-login',
@@ -21,7 +22,7 @@ export class LoginPage {
   loginPass: string;
   //login: any = {};
 
-  constructor(public navParams: NavParams, public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController, public loginService: LoginDataProvider) {
+  constructor(public navParams: NavParams, public alertCtrl: AlertController, public navCtrl: NavController, public loadingCtrl: LoadingController, public loginService: LoginDataProvider, public db: AngularFireDatabase) {
   	this.role = navParams.get("role");
     this.first_name = navParams.get("first_name");
     this.last_name = navParams.get("last_name");
@@ -104,6 +105,10 @@ export class LoginPage {
               this.role = 'Navigator';
               this.first_name = "Nikesh";
               this.username = 'nikesh';
+              this.db.list('role').push(this.role);
+              this.db.list('firstName').push(this.first_name);
+              this.db.list('username').push(this.username);
+
               return true;
             }
           return false;
