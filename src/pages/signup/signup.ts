@@ -56,8 +56,6 @@ signup() {
 		);
 }
 
-  writeUserData()
-
   signUpLoad() {
     let loading = this.loadingCtrl.create({
       content: 'Creating your profile, cadet. Please wait...'

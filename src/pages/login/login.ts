@@ -76,17 +76,6 @@ fb: FormBuilder) {
   	alert.present();
   }
 
-  checkLogin(): void {
-  		if ( this.verifyLogin(this.loginUser, this.loginPass) )
-         {
-          this.signInLoad();
-         }
-      else
-        {
-          this.loginAlert();
-        }
-  }
-
   signInLoad() {
   	let loading = this.loadingCtrl.create({
   		content: 'Getting your information. Please wait...'
@@ -95,14 +84,7 @@ fb: FormBuilder) {
   	loading.present();
 
   	setTimeout(() => {
-  		this.navCtrl.setRoot(HomePage, {
-  			role: this.role,
-      first_name: this.first_name,
-          last_name: this.last_name,
-          email: this.email,
-          password: this.password,
-          username: this.username
-  		});
+  		login();
   	}, 2000);
 
   	setTimeout (() => {
@@ -116,6 +98,7 @@ fb: FormBuilder) {
   	});
   }
 
+  // used for testing
   // verifyLogin(username:string, password:string) {
   //   switch( username )
   //     {
